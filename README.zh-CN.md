@@ -34,6 +34,15 @@
 - [看中文版说明](./README.zh-CN.md)
 - [看英文版说明](./README.md)
 - [看内部价值判断](./references/internal_value_assessment.md)
+- [观看视频讲解](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
+
+## 项目演示
+
+<p align="center">
+  <a href="https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7">
+    <img src="https://img.youtube.com/vi/jLFZp3jxT_g/maxresdefault.jpg" alt="观看 Open Pencil 项目演示" width="76%" />
+  </a>
+</p>
 
 ## 这个仓库为什么存在
 

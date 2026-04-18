@@ -5,8 +5,8 @@
 - 这份表专门用于把 internal `pencil-execution-skill` 往 public `pencil-compatible-workflow` 同步时做白名单判断。
 - 目标不是“internal 有什么就往外搬什么”，而是“只同步可公开的方法层，保留私有护城河和内部链路指纹”。
 - 默认基准：
-  - internal 源：`/Users/awholiu/Desktop/coco/skills/pencil-execution-skill/SKILL.md`
-  - public 目标：`/Users/awholiu/Desktop/coco/13_coding/julilaoshi-lab/works/open-pencil/skill/SKILL.md`
+  - internal 源：`internal pencil execution skill`
+  - public 目标：`public skill/SKILL.md`
 
 ## 判定图例
 

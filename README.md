@@ -2,6 +2,7 @@
 
 <p align="center">
   <strong>Last year “automatic design” still sounded like a fantasy. This year you can already start using Open Pencil.</strong><br />
+  Open Pencil can handle a more automatic first pass, but it also supports a semi-automatic workflow where the agent builds, reads, and batches changes first, then you still jump in to tweak fonts, drag images, swap assets, and finish details by hand.<br />
   But the honest version matters: this is not a one-button miracle. It gets much stronger when it works together with <code>takeaway-skill</code>, reference data, and the local dependencies already installed in my internal workflow.
 </p>
 
@@ -32,6 +33,15 @@ English | [简体中文](./README.zh-CN.md)
 - [Read the Chinese version](./README.zh-CN.md)
 - [Read the internal value note](./references/internal_value_assessment.md)
 - treat this repo as a public execution layer, not the full internal stack
+- [Watch the video walkthrough](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
+
+## Project Demo
+
+<p align="center">
+  <a href="https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7">
+    <img src="https://img.youtube.com/vi/jLFZp3jxT_g/maxresdefault.jpg" alt="Watch the Open Pencil project demo" width="76%" />
+  </a>
+</p>
 
 ## Why This Repository Exists
 
@@ -240,6 +250,20 @@ The public version does not keep:
 - third-party recording archives
 - private identity sync
 - private internal traces copied directly out of the internal workflow
+
+## Find Julilaoshi
+
+<p align="center">
+  <a href="https://github.com/julilaoshi"><img alt="Follow Juli on GitHub" src="https://img.shields.io/badge/Follow%20Juli-on%20GitHub-111111?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/julilaoshi/open-pencil"><img alt="Star Open Pencil" src="https://img.shields.io/badge/Star-Open%20Pencil-f6c343?style=for-the-badge&logo=github&logoColor=111111" /></a>
+</p>
+
+| Platform | Identity |
+| --- | --- |
+| X / Twitter | [@julilaoshi](https://x.com/julilaoshi?s=21) |
+| Instagram | [@julilaoshi](https://www.instagram.com/julilaoshi?igsh=d2lhZmhoMzNlOTlk&utm_source=qr) |
+| YouTube | [@julilaoshi](https://www.youtube.com/@julilaoshi) |
+| Red Book | [居里老师](https://xhslink.com/m/ArTQH4nAado) |
 
 ## License
 
