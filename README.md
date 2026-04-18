@@ -10,7 +10,6 @@
   <a href="./skill/SKILL.md"><img alt="Read Skill" src="https://img.shields.io/badge/Read-Skill-1f6feb?style=for-the-badge" /></a>
   <a href="#how-to-install-and-use"><img alt="How To Install" src="https://img.shields.io/badge/How-To%20Install-111111?style=for-the-badge" /></a>
   <a href="#default-repository-flow"><img alt="How It Works" src="https://img.shields.io/badge/How-It%20Works-2da44e?style=for-the-badge" /></a>
-  <a href="./references/internal_value_assessment.md"><img alt="Internal Value Note" src="https://img.shields.io/badge/Internal-Value-f6c343?style=for-the-badge" /></a>
 </p>
 
 <p align="center">
@@ -31,7 +30,6 @@ English | [简体中文](./README.zh-CN.md)
 
 - [Read the public skill file](./skill/SKILL.md)
 - [Read the Chinese version](./README.zh-CN.md)
-- [Read the internal value note](./references/internal_value_assessment.md)
 - treat this repo as a public execution layer, not the full internal stack
 - [Watch the video walkthrough](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
 
@@ -67,7 +65,7 @@ So people can run a real chain instead of only watching a cool demo.
 - a public `Open Pencil`
 - a workflow repository for official `Pencil` users
 - a real method for handshake, canvas reads, bounded edits, lock-safe patching, and screenshot review
-- public dependency notes, release checks, and public/private boundary docs
+- public dependency notes and public/private boundary docs
 - the current public `v1.0` release
 
 ## What This Repository Does Not Include
@@ -200,11 +198,12 @@ In short:
 - `agents/openai.yaml` - skill UI metadata
 - `site/index.html` - landing page
 
-## Release Helpers
+## Public References
 
-- [GITHUB_ABOUT_SUGGESTION.md](./GITHUB_ABOUT_SUGGESTION.md) - GitHub description and topics suggestion
-- [PUBLIC_RELEASE_CHECKLIST.md](./PUBLIC_RELEASE_CHECKLIST.md) - final pre-publish review list
-- [RELEASE_V1_0.md](./RELEASE_V1_0.md) - launch-note draft
+- [BRAND_NOTICE.md](./BRAND_NOTICE.md) - brand boundary and reuse scope
+- [references/install_from_official.md](./references/install_from_official.md) - official install and dependency boundary
+- [references/official_dependency_boundary.md](./references/official_dependency_boundary.md) - official dependency vs public repo scope
+- [references/public_private_split.md](./references/public_private_split.md) - public layer vs private layer split
 
 ## Language Strategy
 

@@ -10,7 +10,6 @@
   <a href="./skill/SKILL.md"><img alt="阅读 Skill" src="https://img.shields.io/badge/阅读-Skill-1f6feb?style=for-the-badge" /></a>
   <a href="#如何安装和使用"><img alt="如何安装" src="https://img.shields.io/badge/如何-安装-111111?style=for-the-badge" /></a>
   <a href="#默认使用流"><img alt="如何使用" src="https://img.shields.io/badge/如何-使用-2da44e?style=for-the-badge" /></a>
-  <a href="./references/internal_value_assessment.md"><img alt="内部判断" src="https://img.shields.io/badge/内部-判断-f6c343?style=for-the-badge" /></a>
 </p>
 
 <p align="center">
@@ -33,7 +32,6 @@
 - [阅读公开版 Skill 文件](./skill/SKILL.md)
 - [看中文版说明](./README.zh-CN.md)
 - [看英文版说明](./README.md)
-- [看内部价值判断](./references/internal_value_assessment.md)
 - [观看视频讲解](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
 
 ## 项目演示
@@ -59,7 +57,6 @@
 - `Pencil` 执行纪律
 - 公开版工作流壳子
 - 安全边界
-- 发布检查表
 
 这样大家至少能先跑通一条真的链路，而不是只看热闹。
 
@@ -68,7 +65,7 @@
 - 一个公开版 `Open Pencil`
 - 一个给官方 `Pencil` 用户使用的工作流仓
 - 一套握手、读画布、批量改动、锁版点修、截图复核的方法
-- 一组公开边界、依赖边界和发布检查说明
+- 一组公开边界和依赖边界说明
 - 当前公开的是 `v1.0`
 
 ## 这个仓库不包含什么
@@ -199,11 +196,12 @@ cd open-pencil
 - `agents/openai.yaml`：skill 的 UI 元数据
 - `site/index.html`：展示页
 
-## 发布辅助
+## 公开说明文件
 
-- [GITHUB_ABOUT_SUGGESTION.md](./GITHUB_ABOUT_SUGGESTION.md)：GitHub description 与 topics 建议
-- [PUBLIC_RELEASE_CHECKLIST.md](./PUBLIC_RELEASE_CHECKLIST.md)：发布前最终检查表
-- [RELEASE_V1_0.md](./RELEASE_V1_0.md)：首发说明草稿
+- [BRAND_NOTICE.md](./BRAND_NOTICE.md)：品牌边界与可复用范围
+- [references/install_from_official.md](./references/install_from_official.md)：官方安装与依赖边界
+- [references/official_dependency_boundary.md](./references/official_dependency_boundary.md)：官方依赖与公开仓边界
+- [references/public_private_split.md](./references/public_private_split.md)：公开层与私有层拆分
 
 ## 语言策略
 
