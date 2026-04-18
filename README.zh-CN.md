@@ -1,7 +1,7 @@
-# Pencil Public Skill / Pencil 公众版 skill
+# Open Pencil / Open Pencil 公开版
 
 <p align="center">
-  <strong>去年全自动设计还像幻想，今年你已经能开始用上 Pencil Public Skill 了。</strong><br />
+  <strong>去年全自动设计还像幻想，今年你已经能开始用上 Open Pencil 了。</strong><br />
   但真相也要说清楚：它不是单独一个神奇按钮，而是和 <code>takeaway-skill</code>、参考数据、以及你本地装好的依赖一起联动，才会越来越像你在我自媒体里看到的效果。
 </p>
 
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  当前公开的是 <code>v1.0</code>。我社交媒体里展示的版本，更接近“Pencil + takeaway + 本地化依赖 + 其他联动 skill”一起工作的内部流程。
+  当前公开的是 <code>v1.0</code>。我社交媒体里展示的版本，更接近“Open Pencil + takeaway + 本地化依赖 + 其他联动 skill”一起工作的内部流程。
 </p>
 
 [English](./README.md) | 简体中文
@@ -54,7 +54,7 @@
 
 ## 这个仓库包含什么
 
-- 一个公开版 `Pencil Public Skill`
+- 一个公开版 `Open Pencil`
 - 一个给官方 `Pencil` 用户使用的工作流仓
 - 一套握手、读画布、批量改动、锁版点修、截图复核的方法
 - 一组公开边界、依赖边界和发布检查说明
@@ -73,13 +73,13 @@
 
 ## 为什么我自媒体里的版本看起来更强
 
-这个公开仓库主要聚焦在 `Pencil Public Skill` 本身。
+这个公开仓库主要聚焦在 `Open Pencil` 本身。
 
 但在我自己的工作流里，最佳效果通常来自多个东西一起工作，比如：
 
 - `takeaway-skill`
   - 负责先判断什么值得学、什么不能直接抄
-- `Pencil Public Skill`
+- `Open Pencil`
   - 负责握手、读画布、改动执行、截图复核
 - 其他联动 skill
   - 比如静态设计、代码实现、素材处理相关 skill
@@ -113,8 +113,8 @@
 ### 第二步：把仓库拉到本地
 
 ```bash
-git clone https://github.com/julilaoshi/pencil-compatible-workflow-kit.git
-cd pencil-compatible-workflow-kit
+git clone https://github.com/julilaoshi/open-pencil.git
+cd open-pencil
 ```
 
 然后把这个文件夹打开到 Codex、Claude Code，或者你的 cloud coding 工作区里。
@@ -140,7 +140,7 @@ cd pencil-compatible-workflow-kit
 先读 skill/SKILL.md。
 如果这轮有参考对象，先用 takeaway-skill 判断什么值得拿、什么不能直接抄。
 如果参考证据不足，不要靠想象自己补设计方向。
-这轮用 Pencil Public Skill 处理这个 .pen 任务。
+这轮用 Open Pencil 处理这个 .pen 任务。
 先告诉我这轮改什么、不改什么。
 如果当前页面已经手工调过，就自动切到锁版点修模式，只改点名对象。
 最后一定做截图复核，并告诉我有没有带动其他模块。
@@ -177,7 +177,7 @@ cd pencil-compatible-workflow-kit
 也就是说：
 
 - `takeaway-skill` 管上游判断
-- `Pencil Public Skill` 管执行
+- `Open Pencil` 管执行
 - 参考数据决定你能走多远
 
 ## 目录结构

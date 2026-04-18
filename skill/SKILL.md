@@ -3,7 +3,7 @@ name: pencil-compatible-skill
 description: Public-safe Pencil execution skill for creators using official Pencil and its local MCP tools. Use when a task has already entered Pencil, .pen, or Pencil MCP execution and you need handshake, canvas reads, batch edits, screenshot review, lock-safe patches, and public-safe release boundaries without redistributing official Pencil or leaking private assets.
 ---
 
-# Pencil Public Skill
+# Open Pencil
 
 ## Overview
 

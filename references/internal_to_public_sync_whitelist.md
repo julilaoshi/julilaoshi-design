@@ -6,7 +6,7 @@
 - 目标不是“internal 有什么就往外搬什么”，而是“只同步可公开的方法层，保留私有护城河和内部链路指纹”。
 - 默认基准：
   - internal 源：`/Users/awholiu/Desktop/coco/skills/pencil-execution-skill/SKILL.md`
-  - public 目标：`/Users/awholiu/Desktop/coco/13_coding/julilaoshi-lab/works/pencil-compatible-workflow-kit/skill/SKILL.md`
+  - public 目标：`/Users/awholiu/Desktop/coco/13_coding/julilaoshi-lab/works/open-pencil/skill/SKILL.md`
 
 ## 判定图例
 

@@ -1,7 +1,7 @@
-# Pencil Public Skill / Pencil Public Skill
+# Open Pencil / Open Pencil
 
 <p align="center">
-  <strong>Last year “automatic design” still sounded like a fantasy. This year you can already start using Pencil Public Skill.</strong><br />
+  <strong>Last year “automatic design” still sounded like a fantasy. This year you can already start using Open Pencil.</strong><br />
   But the honest version matters: this is not a one-button miracle. It gets much stronger when it works together with <code>takeaway-skill</code>, reference data, and the local dependencies already installed in my internal workflow.
 </p>
 
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  Public <code>v1.0</code> now. The stronger versions shown on my social media are closer to a workflow where Pencil, takeaway, local dependencies, and other linked skills all work together.
+  Public <code>v1.0</code> now. The stronger versions shown on my social media are closer to a workflow where Open Pencil, takeaway, local dependencies, and other linked skills all work together.
 </p>
 
 English | [简体中文](./README.zh-CN.md)
@@ -54,7 +54,7 @@ So people can run a real chain instead of only watching a cool demo.
 
 ## What This Repository Includes
 
-- a public `Pencil Public Skill`
+- a public `Open Pencil`
 - a workflow repository for official `Pencil` users
 - a real method for handshake, canvas reads, bounded edits, lock-safe patching, and screenshot review
 - public dependency notes, release checks, and public/private boundary docs
@@ -73,13 +73,13 @@ So people can run a real chain instead of only watching a cool demo.
 
 ## Why The Social Media Version Looks Stronger
 
-This repository focuses on `Pencil Public Skill` itself.
+This repository focuses on `Open Pencil` itself.
 
 But in my real workflow, the strongest results usually come from several parts working together:
 
 - `takeaway-skill`
   - decides what is worth learning from a reference and what must not be copied directly
-- `Pencil Public Skill`
+- `Open Pencil`
   - handles handshake, canvas reads, execution, and screenshot review
 - other linked skills
   - such as static design, coding, or asset-processing layers
@@ -113,8 +113,8 @@ Install `Pencil` from the official source first. Do not expect this repository t
 ### 2. Clone this repository
 
 ```bash
-git clone https://github.com/julilaoshi/pencil-compatible-workflow-kit.git
-cd pencil-compatible-workflow-kit
+git clone https://github.com/julilaoshi/open-pencil.git
+cd open-pencil
 ```
 
 Then open this folder in Codex, Claude Code, or your cloud coding workspace.
@@ -140,7 +140,7 @@ Once the handshake works, then move to the actual task:
 Read skill/SKILL.md first.
 If there is a reference target, use takeaway-skill first to decide what to learn and what not to copy.
 If reference evidence is weak, do not invent the design direction.
-Use Pencil Public Skill for this .pen task.
+Use Open Pencil for this .pen task.
 Tell me what this round will change and what it will not change.
 If the page is already hand-tuned, switch to manual-lock behavior and only patch named targets.
 Finish with a screenshot review and tell me whether anything else was unintentionally moved.
@@ -179,7 +179,7 @@ The default flow is:
 In short:
 
 - `takeaway-skill` handles upstream judgment
-- `Pencil Public Skill` handles execution
+- `Open Pencil` handles execution
 - reference data determines how far the workflow can really go
 
 ## Structure

@@ -2,7 +2,7 @@
 
 ## Current Judgment
 
-`Pencil Public Skill v1.0` is worth releasing because it already exposes a real, reusable execution method instead of an empty placeholder repo.
+`Open Pencil v1.0` is worth releasing because it already exposes a real, reusable execution method instead of an empty placeholder repo.
 
 Its current public value is:
 

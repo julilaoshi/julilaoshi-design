@@ -2,7 +2,7 @@
 
 Suggested repository name:
 
-- `pencil-compatible-workflow-kit`
+- `open-pencil`
 
 Suggested GitHub description:
 
@@ -26,4 +26,3 @@ Suggested pinned positioning:
 - Unofficial
 - Pencil-compatible
 - Official install required
-
