@@ -192,7 +192,7 @@ cd open-pencil
 
 - `skill/SKILL.md`：公开版 Pencil skill
 - `demo/`：公开安全假案例和可复制 prompt
-- `references/`：依赖边界、公开边界和内部判断
+- `references/`：依赖边界与公开边界说明
 - `agents/openai.yaml`：skill 的 UI 元数据
 - `site/index.html`：展示页
 

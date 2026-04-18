@@ -194,7 +194,7 @@ In short:
 
 - `skill/SKILL.md` - public Pencil skill
 - `demo/` - public-safe fake brief and copyable prompts
-- `references/` - dependency notes, public boundary docs, and the internal value note
+- `references/` - dependency notes and public boundary docs
 - `agents/openai.yaml` - skill UI metadata
 - `site/index.html` - landing page
 
