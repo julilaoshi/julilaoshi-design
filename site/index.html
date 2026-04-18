@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pencil Public Skill v1.0</title>
+    <style>
+      :root {
+        --paper: #f5efe4;
+        --paper-strong: #fffaf1;
+        --ink: #181513;
+        --muted: #665e57;
+        --line: rgba(24, 21, 19, 0.12);
+        --accent: #d04c31;
+        --accent-soft: #f2b37b;
+        --sage: #7f8f7a;
+        --card: rgba(255, 250, 241, 0.78);
+        --shadow: 0 20px 60px rgba(44, 29, 17, 0.12);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top left, rgba(208, 76, 49, 0.16), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(127, 143, 122, 0.18), transparent 24%),
+          linear-gradient(180deg, #efe4d1 0%, var(--paper) 44%, #f8f3ea 100%);
+        font-family: "IBM Plex Sans", "Avenir Next", "Segoe UI", sans-serif;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .shell {
+        width: min(1120px, calc(100vw - 32px));
+        margin: 0 auto;
+        padding: 24px 0 56px;
+      }
+
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: center;
+        margin-bottom: 28px;
+        font-size: 14px;
+        color: var(--muted);
+      }
+
+      .mark {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .mark::before {
+        content: "";
+        width: 11px;
+        height: 11px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+        box-shadow: 0 0 0 6px rgba(208, 76, 49, 0.08);
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.9fr);
+        gap: 22px;
+        align-items: stretch;
+      }
+
+      .panel {
+        background: var(--card);
+        backdrop-filter: blur(8px);
+        border: 1px solid var(--line);
+        border-radius: 26px;
+        box-shadow: var(--shadow);
+      }
+
+      .hero-main {
+        padding: 34px;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(208, 76, 49, 0.18);
+        background: rgba(255, 250, 241, 0.78);
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: "Space Grotesk", "Avenir Next Condensed", sans-serif;
+        letter-spacing: -0.03em;
+      }
+
+      h1 {
+        margin-top: 18px;
+        font-size: clamp(42px, 7vw, 86px);
+        line-height: 0.96;
+        max-width: 9.4ch;
+      }
+
+      .lead {
+        margin: 20px 0 0;
+        max-width: 52ch;
+        color: var(--muted);
+        font-size: 18px;
+        line-height: 1.7;
+      }
+
+      .hero-notes {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .chip {
+        padding: 10px 14px;
+        border-radius: 999px;
+        border: 1px dashed rgba(24, 21, 19, 0.16);
+        background: rgba(255, 250, 241, 0.72);
+        font-size: 14px;
+      }
+
+      .hero-links {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .hero-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 16px;
+        border-radius: 999px;
+        border: 1px solid rgba(24, 21, 19, 0.12);
+        background: rgba(255, 255, 255, 0.72);
+        text-decoration: none;
+        font-size: 14px;
+      }
+
+      .hero-side {
+        padding: 24px;
+        display: grid;
+        gap: 14px;
+      }
+
+      .stat {
+        padding: 18px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.62);
+        border: 1px solid var(--line);
+      }
+
+      .stat-label {
+        color: var(--muted);
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .stat-value {
+        margin-top: 10px;
+        font-size: 28px;
+        line-height: 1.1;
+        font-family: "Space Grotesk", "Avenir Next Condensed", sans-serif;
+      }
+
+      .grid {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: 22px;
+      }
+
+      .card {
+        padding: 26px;
+        grid-column: span 6;
+      }
+
+      .card h2 {
+        font-size: 30px;
+        margin-bottom: 14px;
+      }
+
+      .card p {
+        margin: 0 0 16px;
+        color: var(--muted);
+        line-height: 1.75;
+      }
+
+      .list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .item {
+        padding: 14px 16px;
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.58);
+        border: 1px solid var(--line);
+      }
+
+      .item strong {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 15px;
+      }
+
+      .item span {
+        color: var(--muted);
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .full {
+        grid-column: 1 / -1;
+      }
+
+      .steps {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+      }
+
+      .step {
+        padding: 18px;
+        border-radius: 20px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.56);
+      }
+
+      .step small {
+        display: block;
+        margin-bottom: 10px;
+        color: var(--accent);
+        font-weight: 700;
+        letter-spacing: 0.08em;
+      }
+
+      .footer {
+        margin-top: 22px;
+        padding: 22px 24px;
+        border-radius: 24px;
+        border: 1px solid var(--line);
+        background: rgba(24, 21, 19, 0.92);
+        color: #f4ede3;
+      }
+
+      .footer strong {
+        color: #fff9ef;
+      }
+
+      @media (max-width: 920px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .card {
+          grid-column: 1 / -1;
+        }
+
+        .steps {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .shell {
+          width: min(100vw - 20px, 1120px);
+        }
+
+        .hero-main,
+        .hero-side,
+        .card {
+          padding: 22px;
+        }
+
+        .steps {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <div class="topbar">
+        <div class="mark">Pencil Public Skill v1.0</div>
+        <div>给官方 Pencil 用户的非官方公开执行层</div>
+      </div>
+
+      <section class="hero">
+        <article class="panel hero-main">
+          <div class="eyebrow">Public v1.0 · unofficial · Pencil-compatible</div>
+          <h1>去年还像幻想，今年已经能开始半自动设计了。</h1>
+          <p class="lead">
+            但真相也要说清楚：`Pencil Public Skill` 不是单独一个神奇按钮。它更像一个公开执行层，只有和
+            `takeaway-skill`、参考数据、以及你本地装好的依赖联动起来，才会越来越像你在我自媒体里看到的效果。
+          </p>
+          <div class="hero-links">
+            <a class="hero-link" href="../README.zh-CN.md">先看中文版</a>
+            <a class="hero-link" href="../README.md">Read English README</a>
+            <a class="hero-link" href="../README.zh-CN.md">查看中文 README</a>
+            <a class="hero-link" href="../skill/SKILL.md">阅读 Public Skill</a>
+          </div>
+          <div class="hero-notes">
+            <div class="chip">先装官方 Pencil</div>
+            <div class="chip">强依赖 takeaway-skill</div>
+            <div class="chip">强依赖参考数据</div>
+            <div class="chip">失败通常是缺依赖</div>
+            <div class="chip">不打包官方 MCP</div>
+            <div class="chip">内部增强层继续私有</div>
+          </div>
+        </article>
+
+        <aside class="panel hero-side">
+          <div class="stat">
+            <div class="stat-label">公开定位</div>
+            <div class="stat-value">公众版 v1.0 执行层</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">最强依赖</div>
+            <div class="stat-value">Takeaway + 数据 + 本地依赖</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">公开的是</div>
+            <div class="stat-value">方法、说明、模板、检查表</div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="grid">
+        <article class="panel card">
+          <h2>它真正帮你做到什么</h2>
+          <p>
+            这不是“看起来很酷但其实跑不起来”的空壳。它已经把 `Pencil` 这一层真正能复用的执行纪律开出来了。
+          </p>
+          <div class="list">
+            <div class="item">
+              <strong>先握手，再开工</strong>
+              <span>先测工具、先读画布、先确认能截图，不让人一上来就蒙着改。</span>
+            </div>
+            <div class="item">
+              <strong>批量执行，不碎修</strong>
+              <span>改动更像一轮一轮执行，而不是随手点一点、歪一点、再补一点。</span>
+            </div>
+            <div class="item">
+              <strong>锁版后只点修</strong>
+              <span>页面已经手工调过时，自动切换到更稳的锁版点修思路。</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel card">
+          <h2>它不是什么</h2>
+          <p>
+            先把预期说清楚，别人反而更容易用对。
+          </p>
+          <div class="list">
+            <div class="item">
+              <strong>不是官方 Pencil</strong>
+              <span>这里不提供官方本体，也不镜像、不再分发官方 MCP。</span>
+            </div>
+            <div class="item">
+              <strong>不是一键魔法包</strong>
+              <span>它不能脱离 `takeaway-skill`、参考数据和本地依赖，独立复现我最强演示效果。</span>
+            </div>
+            <div class="item">
+              <strong>不是内部完整版</strong>
+              <span>公开的是执行层，不是我内部那套已经练了很多轮的增强工作流。</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel card full">
+          <h2>为什么我自媒体里的版本看起来更强</h2>
+          <p>
+            因为我演示时，本来就不是只靠一个 public skill 在工作。
+          </p>
+          <div class="steps">
+            <div class="step">
+              <small>01</small>
+              `takeaway-skill`
+              先判断什么值得学、什么不能直接抄。
+            </div>
+            <div class="step">
+              <small>02</small>
+              `Pencil Public Skill`
+              负责握手、读画布、改动执行、截图复核。
+            </div>
+            <div class="step">
+              <small>03</small>
+              本地化依赖
+              我自己的脚本、运行环境和安装好的工具也在一起工作。
+            </div>
+            <div class="step">
+              <small>04</small>
+              更多参考数据
+              internal 里积累的截图、录屏、蒸馏卡和中间资产也会继续放大效果。
+            </div>
+          </div>
+        </article>
+
+        <article class="panel card full">
+          <h2>如何安装和使用</h2>
+          <p>
+            不要一上来就让 agent 干整页设计。先做握手测试，通过了再开始嘴指挥。
+          </p>
+          <div class="steps">
+            <div class="step">
+              <small>01</small>
+              先从官方渠道安装 Pencil，并确认 MCP 工具已经出现。
+            </div>
+            <div class="step">
+              <small>02</small>
+              打开这个仓库后，先读 `skill/SKILL.md`，不要直接开改。
+            </div>
+            <div class="step">
+              <small>03</small>
+              先让 agent 做一轮握手测试，确认能读画布、能截图、能调用工具。
+            </div>
+            <div class="step">
+              <small>04</small>
+              握手通过后，再结合 `takeaway-skill` 和参考数据正式执行。
+            </div>
+          </div>
+        </article>
+
+        <article class="panel card full">
+          <h2>如果失败了，通常说明什么</h2>
+          <p>
+            先把这句话写清楚很重要：有些功能跑不起来，不一定是这个 skill 不好，更常见的是你还缺依赖。
+          </p>
+          <div class="list">
+            <div class="item">
+              <strong>官方 Pencil 没装好</strong>
+              <span>或者 Pencil 没启动，所以工具链根本没连上。</span>
+            </div>
+            <div class="item">
+              <strong>MCP 工具没出现</strong>
+              <span>客户端里还没看到工具，说明这轮连基础握手都没完成。</span>
+            </div>
+            <div class="item">
+              <strong>缺少上游和数据</strong>
+              <span>没接上 `takeaway-skill`，或者没给够截图、录屏、蒸馏卡，执行层自然不会像演示里那么强。</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="panel card full">
+          <h2>默认使用流</h2>
+          <p>
+            真正常用的路线不是“只读一个 skill 文件”，而是一整条链路一起工作。
+          </p>
+          <div class="steps">
+            <div class="step">
+              <small>01</small>
+              先装好官方 `Pencil`。
+            </div>
+            <div class="step">
+              <small>02</small>
+              用 `takeaway-skill` 先判断参考里什么值得拿。
+            </div>
+            <div class="step">
+              <small>03</small>
+              准备好截图、录屏、蒸馏卡等参考数据。
+            </div>
+            <div class="step">
+              <small>04</small>
+              再用 `Pencil Public Skill` 跑握手、读画布、改动执行和截图复核。
+            </div>
+          </div>
+        </article>
+
+        <article class="panel card full">
+          <h2>v1.0 真话版</h2>
+          <p>
+            这是一个公开的 <strong>v1.0</strong>。它是真的能用，但它公开的是方法层和执行层，不是我内部已经装好一堆依赖、联动多 skill、准备了更多数据的完整增强版。
+          </p>
+        </article>
+      </section>
+
+      <section class="footer">
+        <strong>公开版最重要的规则：</strong>把方法层开出来，把依赖真相说清楚，把真正的护城河继续留在私有层。
+      </section>
+    </main>
+  </body>
+</html>

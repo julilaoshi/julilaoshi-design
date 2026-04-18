@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pencil Public Skill"
+  short_description: "公众版 Pencil 执行 skill：预握手、读画布、批量改、锁版点修、截图复核"
+  default_prompt: "Use $pencil-compatible-skill when a task has already entered official Pencil, .pen, or Pencil MCP execution and you need public-safe handshake, canvas reads, batch edits, screenshot review, and lock-safe patches without bundling official Pencil or leaking private assets."
