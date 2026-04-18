@@ -2,6 +2,7 @@
 
 <p align="center">
   <strong>去年全自动设计还像幻想，今年你已经能开始用上 Open Pencil 了。</strong><br />
+  Open Pencil 可以帮你做全自动的第一轮搭建，也可以做半自动的人机协作：先让 agent 跑握手、读画布、批量改版，你再自己顺手调字体、拖图片、换素材、补细节。<br />
   但真相也要说清楚：它不是单独一个神奇按钮，而是和 <code>takeaway-skill</code>、参考数据、以及你本地装好的依赖一起联动，才会越来越像你在我自媒体里看到的效果。
 </p>
 
@@ -20,7 +21,8 @@
 
 ## 它真正帮你做到什么
 
-- 让你开始真正用 agent 指挥 `Pencil`，而不是只会手工一点点改
+- 全自动用嘴语音输入做设计，不用手写复杂提示词也能直接做设计（建议语音输入）
+- 可以在任何中间环节半自动修改设计，修改文字、修改图片、添加新元素，边做边接管
 - 先做握手测试，再读画布，再批量改动，再截图复核
 - 当页面已经手工调过时，自动切到“锁版点修”思路
 - 把 `Pencil` 工作流整理成一个更好复用、更好演示、更好开源的公开层
@@ -237,6 +239,22 @@ cd open-pencil
 - 第三方录屏归档
 - 私有身份同步
 - 从 internal 直接搬出来的私有研究痕迹
+
+## 找到居里老师
+
+<p align="center">
+  <a href="https://github.com/julilaoshi"><img alt="关注 GitHub" src="https://img.shields.io/badge/关注-GitHub-111111?style=for-the-badge&logo=github&logoColor=white" /></a>
+  <a href="https://github.com/julilaoshi/open-pencil"><img alt="给仓库点星" src="https://img.shields.io/badge/给仓库-点星-f6c343?style=for-the-badge&logo=github&logoColor=111111" /></a>
+</p>
+
+| 平台 | 账号 / 入口 |
+| --- | --- |
+| 推特 / X | [@julilaoshi](https://x.com/julilaoshi?s=21) |
+| Instagram / INS | [@julilaoshi](https://www.instagram.com/julilaoshi?igsh=d2lhZmhoMzNlOTlk&utm_source=qr) |
+| B站 | [居里老师](https://space.bilibili.com/522623529) |
+| Red Book | [居里老师](https://xhslink.com/m/ArTQH4nAado) |
+| 公众号 | `居里生成` |
+| 视频号 | `居里老师` |
 
 ## License
 
