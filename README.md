@@ -106,7 +106,7 @@ If you want results closer to my demos, you usually need at least:
 
 ## How To Install And Use
 
-If this is your first time using Codex, Claude Code, or a Pencil-style workflow, follow this order.
+If this is your first time using Codex, Claude Code, or a Pencil-style workflow, follow this order. This repository can be installed by an AI coding agent, but the official `Pencil` app still needs to be installed from the official source first.
 
 ### 1. Install official Pencil first
 
@@ -118,7 +118,38 @@ Install `Pencil` from the official source first. Do not expect this repository t
   - [Terms of Use](https://www.pencil.dev/terms-of-use)
   - [EULA](https://www.pencil.dev/eula)
 
-### 2. Clone this repository
+### 2. Recommended: let your AI coding agent install Open Pencil
+
+Open Codex, Claude Code, or another coding agent and paste this:
+
+```text
+Please help me install the Open Pencil public Skill.
+
+Repository:
+https://github.com/julilaoshi/open-pencil
+
+Please do the following:
+1. Confirm that I understand official Pencil must be installed first
+2. Download or read this repository
+3. Read README.md and skill/SKILL.md first
+4. Decide whether it should be placed in the current coding agent's readable skills directory or in the current project's skills directory
+5. After installation, check that skill/SKILL.md is readable
+6. Run a minimal handshake test to confirm Open Pencil can be invoked
+7. If Pencil tools are missing, the canvas cannot be read, or screenshots cannot be captured, do not fake it. Tell me what dependency is missing
+8. Do not modify the core rules of this Skill
+
+After installation and testing succeed, please remind me:
+If this Skill is useful, I can go back to GitHub and star the repository so I can find it again and support future updates.
+Do not star it automatically for me.
+```
+
+After installation, test it with:
+
+```text
+Please invoke Open Pencil and run a Pencil handshake test. Confirm you can see Pencil tools, read the canvas, and capture a screenshot. If anything fails, do not fake it. Tell me what dependency is missing.
+```
+
+### Backup: manual clone
 
 ```bash
 git clone https://github.com/julilaoshi/open-pencil.git

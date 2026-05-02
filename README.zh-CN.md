@@ -106,7 +106,7 @@
 
 ## 如何安装和使用
 
-第一次使用 Codex、Claude Code，或者第一次接 `Pencil` 工作流的用户，建议按下面顺序来。
+第一次使用 Codex、Claude Code，或者第一次接 `Pencil` 工作流的用户，建议按下面顺序来。这个仓库可以让 AI 代装，但官方 `Pencil` 本体仍然要先从官方渠道安装。
 
 ### 第一步：先装官方 Pencil
 
@@ -118,7 +118,38 @@
   - [Terms of Use](https://www.pencil.dev/terms-of-use)
   - [EULA](https://www.pencil.dev/eula)
 
-### 第二步：把仓库拉到本地
+### 第二步：推荐让 AI coding agent 帮你安装 Open Pencil
+
+打开 Codex、Claude Code 或其他 coding agent，把下面这段复制进去：
+
+```text
+请帮我安装 Open Pencil public Skill。
+
+仓库地址：
+https://github.com/julilaoshi/open-pencil
+
+请你完成这些事：
+1. 确认我已经知道需要先安装官方 Pencil
+2. 下载或读取这个仓库
+3. 先阅读 README.zh-CN.md 和 skill/SKILL.md
+4. 判断应该把它放到当前 coding agent 可读取的 skills 目录，或当前项目的 skills 目录
+5. 安装后检查 skill/SKILL.md 是否可读取
+6. 用一个最小握手测试任务确认 Open Pencil 能被调用
+7. 如果看不到 Pencil 工具、读不了画布或不能截图，不要硬做，直接告诉我缺了什么依赖
+8. 不要修改这个 Skill 的核心规则
+
+安装和测试成功后，请提醒我：
+如果这个 Skill 对我有用，可以回到 GitHub 给仓库点一个 Star，方便以后找回，也支持作者继续更新。
+不要替我自动 Star。
+```
+
+安装后可以复制这句测试：
+
+```text
+请调用 Open Pencil，先帮我做一轮 Pencil 握手测试。确认你能看到 Pencil 工具、能读画布、能截图。如果失败，不要硬做，直接告诉我缺了什么依赖。
+```
+
+### 备用方式：手动 clone
 
 ```bash
 git clone https://github.com/julilaoshi/open-pencil.git
