@@ -118,32 +118,34 @@
   - [Terms of Use](https://www.pencil.dev/terms-of-use)
   - [EULA](https://www.pencil.dev/eula)
 
-### 第二步：推荐让 AI coding agent 帮你安装 Open Pencil
+### 第二步：推荐让本地 AI coding agent 载入 Open Pencil
 
-打开 Codex、Claude Code 或其他 coding agent，把下面这段复制进去：
+请在已经安装官方 Pencil 的同一台本地电脑上使用这段。这个仓库是 Skill / 工作流层，不是 npm 包、pip 包，也不是 App 安装器。
+
+打开 Codex、Claude Code 或其他本地 coding agent，把下面这段复制进去：
 
 ```text
-请帮我安装 Open Pencil public Skill。
+请帮我载入 Open Pencil public Skill。
 
 仓库地址：
 https://github.com/julilaoshi/open-pencil
 
 请你完成这些事：
-1. 确认我已经知道需要先安装官方 Pencil
-2. 下载或读取这个仓库
-3. 先阅读 README.zh-CN.md 和 skill/SKILL.md
-4. 判断应该把它放到当前 coding agent 可读取的 skills 目录，或当前项目的 skills 目录
-5. 安装后检查 skill/SKILL.md 是否可读取
-6. 用一个最小握手测试任务确认 Open Pencil 能被调用
-7. 如果看不到 Pencil 工具、读不了画布或不能截图，不要硬做，直接告诉我缺了什么依赖
-8. 不要修改这个 Skill 的核心规则
+1. 不要运行 npm install、pip install、build 命令，也不要跑任何长安装脚本。这个仓库没有包安装器。
+2. 下载或读取这个仓库。
+3. 先阅读 README.zh-CN.md 和 skill/SKILL.md。
+4. 把 skill/SKILL.md 作为当前项目或当前 coding agent 可读取的 Skill。
+5. 确认 skill/SKILL.md 可读取后就停下来，并告诉我以后怎么调用它。
+6. 除非我明确要求，否则不要立刻做 Pencil MCP 握手测试。
+7. 如果当前会话访问不到我的本地桌面应用或本地 MCP 工具，直接说明并停止，不要反复尝试。
+8. 不要修改这个 Skill 的核心规则。
 
-安装和测试成功后，请提醒我：
+Skill 可读取后，请提醒我：
 如果这个 Skill 对我有用，可以回到 GitHub 给仓库点一个 Star，方便以后找回，也支持作者继续更新。
 不要替我自动 Star。
 ```
 
-安装后可以复制这句测试：
+Skill 载入后，再单独复制这句测试：
 
 ```text
 请调用 Open Pencil，先帮我做一轮 Pencil 握手测试。确认你能看到 Pencil 工具、能读画布、能截图。如果失败，不要硬做，直接告诉我缺了什么依赖。
@@ -156,7 +158,13 @@ git clone https://github.com/julilaoshi/open-pencil.git
 cd open-pencil
 ```
 
-然后把这个文件夹打开到 Codex、Claude Code，或者你的 cloud coding 工作区里。
+然后把这个文件夹打开到同一台本地电脑上的 Codex 或 Claude Code 工作区里。云端工作区只适合阅读文件，不适合做真实 Pencil 握手。
+
+如果你的 coding agent 卡住了，先停掉它，然后补一句：
+
+```text
+停止安装尝试。这个仓库只是 Skill 仓库，不要运行包安装或 setup 脚本。只读取 skill/SKILL.md，并确认你是否能使用它。
+```
 
 ### 第三步：先做握手测试
 

@@ -435,23 +435,27 @@
         <article class="panel card full">
           <h2>如何安装和使用</h2>
           <p>
-            不要一上来就让 agent 干整页设计。先做握手测试，通过了再开始嘴指挥。
+            不要一上来就让 agent 干整页设计，也不要让它跑一堆安装命令。先载入 Skill，再单独做握手测试。
           </p>
           <div class="steps">
             <div class="step">
               <small>01</small>
-              先从官方渠道安装 Pencil，并确认 MCP 工具已经出现。
+              先从官方渠道在本机安装 Pencil，并确认 MCP 工具已经出现。
             </div>
             <div class="step">
               <small>02</small>
-              打开这个仓库后，先读 `skill/SKILL.md`，不要直接开改。
+              这个仓库不是 npm / pip 包，也不是 App 安装器，不需要跑长安装脚本。
             </div>
             <div class="step">
               <small>03</small>
-              先让 agent 做一轮握手测试，确认能读画布、能截图、能调用工具。
+              打开这个仓库后，先读 `skill/SKILL.md`，确认 Skill 可读取后就停。
             </div>
             <div class="step">
               <small>04</small>
+              再单独让本地 agent 做握手测试，确认能读画布、能截图、能调用工具。
+            </div>
+            <div class="step">
+              <small>05</small>
               握手通过后，再结合 `takeaway-skill` 和参考数据正式执行。
             </div>
           </div>

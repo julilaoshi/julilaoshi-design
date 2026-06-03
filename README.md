@@ -118,32 +118,34 @@ Install `Pencil` from the official source first. Do not expect this repository t
   - [Terms of Use](https://www.pencil.dev/terms-of-use)
   - [EULA](https://www.pencil.dev/eula)
 
-### 2. Recommended: let your AI coding agent install Open Pencil
+### 2. Recommended: let your local AI coding agent load Open Pencil
 
-Open Codex, Claude Code, or another coding agent and paste this:
+Use this on the same local machine where official Pencil is installed. This repository is a Skill/workflow layer, not an npm package, pip package, or app installer.
+
+Open Codex, Claude Code, or another local coding agent and paste this:
 
 ```text
-Please help me install the Open Pencil public Skill.
+Please help me load the Open Pencil public Skill.
 
 Repository:
 https://github.com/julilaoshi/open-pencil
 
 Please do the following:
-1. Confirm that I understand official Pencil must be installed first
-2. Download or read this repository
-3. Read README.md and skill/SKILL.md first
-4. Decide whether it should be placed in the current coding agent's readable skills directory or in the current project's skills directory
-5. After installation, check that skill/SKILL.md is readable
-6. Run a minimal handshake test to confirm Open Pencil can be invoked
-7. If Pencil tools are missing, the canvas cannot be read, or screenshots cannot be captured, do not fake it. Tell me what dependency is missing
-8. Do not modify the core rules of this Skill
+1. Do not run npm install, pip install, build commands, or any long setup script. This repo has no package installer.
+2. Download or read the repository.
+3. Read README.md and skill/SKILL.md first.
+4. Make skill/SKILL.md available as a readable Skill in this project or in my coding agent's skills directory.
+5. Stop after confirming that skill/SKILL.md is readable and summarize how to invoke it.
+6. Do not run the Pencil MCP handshake yet unless I explicitly ask for it.
+7. If this session cannot access my local desktop apps or local MCP tools, say so and stop. Do not keep trying.
+8. Do not modify the core rules of this Skill.
 
-After installation and testing succeed, please remind me:
+After the Skill is readable, please remind me:
 If this Skill is useful, I can go back to GitHub and star the repository so I can find it again and support future updates.
 Do not star it automatically for me.
 ```
 
-After installation, test it with:
+After the Skill is loaded, test it separately with:
 
 ```text
 Please invoke Open Pencil and run a Pencil handshake test. Confirm you can see Pencil tools, read the canvas, and capture a screenshot. If anything fails, do not fake it. Tell me what dependency is missing.
@@ -156,7 +158,13 @@ git clone https://github.com/julilaoshi/open-pencil.git
 cd open-pencil
 ```
 
-Then open this folder in Codex, Claude Code, or your cloud coding workspace.
+Then open this folder in a local Codex or Claude Code workspace on the same machine where official Pencil is installed. Cloud workspaces are only suitable for reading the files, not for the real Pencil handshake.
+
+If your coding agent feels stuck, stop it and tell it:
+
+```text
+Stop the install attempt. This is only a Skill repository. Do not run package installs or setup scripts. Just read skill/SKILL.md and confirm whether you can use it.
+```
 
 ### 3. Run a handshake test first
 
