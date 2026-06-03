@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="./skill/SKILL.md"><img alt="阅读 Skill" src="https://img.shields.io/badge/阅读-Skill-1f6feb?style=for-the-badge" /></a>
-  <a href="#如何安装和使用"><img alt="如何安装" src="https://img.shields.io/badge/如何-安装-111111?style=for-the-badge" /></a>
+  <a href="#如何载入和使用"><img alt="如何载入" src="https://img.shields.io/badge/如何-载入-111111?style=for-the-badge" /></a>
   <a href="#默认使用流"><img alt="如何使用" src="https://img.shields.io/badge/如何-使用-2da44e?style=for-the-badge" /></a>
 </p>
 
@@ -104,9 +104,9 @@
 2. 有够用的参考数据
 3. 本地依赖已经装好
 
-## 如何安装和使用
+## 如何载入和使用
 
-第一次使用 Codex、Claude Code，或者第一次接 `Pencil` 工作流的用户，建议按下面顺序来。这个仓库可以让 AI 代装，但官方 `Pencil` 本体仍然要先从官方渠道安装。
+第一次使用 Codex、Claude Code，或者第一次接 `Pencil` 工作流的用户，建议按下面顺序来。这个仓库可以让 AI 载入，但官方 `Pencil` 本体仍然要先从官方渠道安装。
 
 ### 第一步：先装官方 Pencil
 

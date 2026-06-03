@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="./skill/SKILL.md"><img alt="Read Skill" src="https://img.shields.io/badge/Read-Skill-1f6feb?style=for-the-badge" /></a>
-  <a href="#how-to-install-and-use"><img alt="How To Install" src="https://img.shields.io/badge/How-To%20Install-111111?style=for-the-badge" /></a>
+  <a href="#how-to-load-and-use"><img alt="How To Load" src="https://img.shields.io/badge/How-To%20Load-111111?style=for-the-badge" /></a>
   <a href="#default-repository-flow"><img alt="How It Works" src="https://img.shields.io/badge/How-It%20Works-2da44e?style=for-the-badge" /></a>
 </p>
 
@@ -104,9 +104,9 @@ If you want results closer to my demos, you usually need at least:
 2. enough reference data
 3. a local environment with the needed dependencies already installed
 
-## How To Install And Use
+## How To Load And Use
 
-If this is your first time using Codex, Claude Code, or a Pencil-style workflow, follow this order. This repository can be installed by an AI coding agent, but the official `Pencil` app still needs to be installed from the official source first.
+If this is your first time using Codex, Claude Code, or a Pencil-style workflow, follow this order. This repository can be loaded by an AI coding agent, but the official `Pencil` app still needs to be installed from the official source first.
 
 ### 1. Install official Pencil first
 
