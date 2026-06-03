@@ -18,92 +18,6 @@
 
 [English](./README.md) | 简体中文
 
-## 它真正帮你做到什么
-
-- 全自动用嘴语音输入做设计，不用手写复杂提示词也能直接做设计（建议语音输入）
-- 可以在任何中间环节半自动修改设计，修改文字、修改图片、添加新元素，边做边接管
-- 先做握手测试，再读画布，再批量改动，再截图复核
-- 当页面已经手工调过时，自动切到“锁版点修”思路
-- 把 `Pencil` 工作流整理成一个更好复用、更好演示、更好开源的公开层
-- 配合 `takeaway-skill` 和参考数据后，更容易做出接近我自媒体里那种“看起来像半自动设计”的效果
-
-## 快速开始
-
-- [阅读公开版 Skill 文件](./skill/SKILL.md)
-- [看中文版说明](./README.zh-CN.md)
-- [看英文版说明](./README.md)
-- [观看视频讲解](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
-
-## 项目演示
-
-<p align="center">
-  <a href="https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7">
-    <img src="https://img.youtube.com/vi/jLFZp3jxT_g/maxresdefault.jpg" alt="观看 Open Pencil 项目演示" width="76%" />
-  </a>
-</p>
-
-## 这个仓库为什么存在
-
-很多人看到我演示时，会以为：
-
-- 只要装一个 skill
-- 随便一句话
-- 就能自动做出完整页面
-
-但真实情况不是这样。
-
-这个仓库公开出来，是为了把真正可复用的那一层先开出来：
-
-- `Pencil` 执行纪律
-- 公开版工作流壳子
-- 安全边界
-
-这样大家至少能先跑通一条真的链路，而不是只看热闹。
-
-## 这个仓库包含什么
-
-- 一个公开版 `Open Pencil`
-- 一个给官方 `Pencil` 用户使用的工作流仓
-- 一套握手、读画布、批量改动、锁版点修、截图复核的方法
-- 一组公开边界和依赖边界说明
-- 当前公开的是 `v1.0`
-
-## 这个仓库不包含什么
-
-- 官方 `Pencil` 本体
-- 官方 `MCP` 的再分发包
-- 账号、token、激活状态、本机路径
-- 私有提示词链
-- 私有 benchmark
-- 私有案例库和高级素材包
-- internal 里积累的第三方截图、录屏、研究档案
-- 那套已经装了很多本地依赖和联动 skill 的内部增强版
-
-## 为什么我自媒体里的版本看起来更强
-
-这个公开仓库主要聚焦在 `Open Pencil` 本身。
-
-但在我自己的工作流里，最佳效果通常来自多个东西一起工作，比如：
-
-- `takeaway-skill`
-  - 负责先判断什么值得学、什么不能直接抄
-- `Open Pencil`
-  - 负责握手、读画布、改动执行、截图复核
-- 其他联动 skill
-  - 比如静态设计、代码实现、素材处理相关 skill
-- 本地化依赖和工具环境
-  - 比如我自己已经提前装好的依赖、脚本和运行环境
-
-另外，我内部版已经积累了更多参考数据、蒸馏卡、中间资产和练过很多轮的工作流。
-
-所以你在自媒体里看到的版本更强，不是因为这个 public 仓写少了，而是因为我演示时本来就不是只靠一个 public skill 在工作。
-
-如果你想更接近我演示里的效果，一般至少要满足 3 件事：
-
-1. 有 `takeaway-skill`
-2. 有够用的参考数据
-3. 本地依赖已经装好
-
 ## 如何载入和使用
 
 第一次使用 Codex、Claude Code，或者第一次接 `Pencil` 工作流的用户，建议按下面顺序来。这个仓库可以让 AI 载入，但官方 `Pencil` 本体仍然要先从官方渠道安装。
@@ -209,6 +123,92 @@ cd open-pencil
 - 公开版 `v1.0` 是真的能用
 - 但它不是“脱离环境、脱离依赖、脱离上游 skill 还百分百还原我演示效果”的魔法包
 
+## 它真正帮你做到什么
+
+- 全自动用嘴语音输入做设计，不用手写复杂提示词也能直接做设计（建议语音输入）
+- 可以在任何中间环节半自动修改设计，修改文字、修改图片、添加新元素，边做边接管
+- 先做握手测试，再读画布，再批量改动，再截图复核
+- 当页面已经手工调过时，自动切到“锁版点修”思路
+- 把 `Pencil` 工作流整理成一个更好复用、更好演示、更好开源的公开层
+- 配合 `takeaway-skill` 和参考数据后，更容易做出接近我自媒体里那种“看起来像半自动设计”的效果
+
+## 项目演示
+
+<p align="center">
+  <a href="https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7">
+    <img src="https://img.youtube.com/vi/jLFZp3jxT_g/maxresdefault.jpg" alt="观看 Open Pencil 项目演示" width="76%" />
+  </a>
+</p>
+
+## 快速开始
+
+- [阅读公开版 Skill 文件](./skill/SKILL.md)
+- [看中文版说明](./README.zh-CN.md)
+- [看英文版说明](./README.md)
+- [观看视频讲解](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
+
+## 这个仓库为什么存在
+
+很多人看到我演示时，会以为：
+
+- 只要装一个 skill
+- 随便一句话
+- 就能自动做出完整页面
+
+但真实情况不是这样。
+
+这个仓库公开出来，是为了把真正可复用的那一层先开出来：
+
+- `Pencil` 执行纪律
+- 公开版工作流壳子
+- 安全边界
+
+这样大家至少能先跑通一条真的链路，而不是只看热闹。
+
+## 这个仓库包含什么
+
+- 一个公开版 `Open Pencil`
+- 一个给官方 `Pencil` 用户使用的工作流仓
+- 一套握手、读画布、批量改动、锁版点修、截图复核的方法
+- 一组公开边界和依赖边界说明
+- 当前公开的是 `v1.0`
+
+## 这个仓库不包含什么
+
+- 官方 `Pencil` 本体
+- 官方 `MCP` 的再分发包
+- 账号、token、激活状态、本机路径
+- 私有提示词链
+- 私有 benchmark
+- 私有案例库和高级素材包
+- internal 里积累的第三方截图、录屏、研究档案
+- 那套已经装了很多本地依赖和联动 skill 的内部增强版
+
+## 为什么我自媒体里的版本看起来更强
+
+这个公开仓库主要聚焦在 `Open Pencil` 本身。
+
+但在我自己的工作流里，最佳效果通常来自多个东西一起工作，比如：
+
+- `takeaway-skill`
+  - 负责先判断什么值得学、什么不能直接抄
+- `Open Pencil`
+  - 负责握手、读画布、改动执行、截图复核
+- 其他联动 skill
+  - 比如静态设计、代码实现、素材处理相关 skill
+- 本地化依赖和工具环境
+  - 比如我自己已经提前装好的依赖、脚本和运行环境
+
+另外，我内部版已经积累了更多参考数据、蒸馏卡、中间资产和练过很多轮的工作流。
+
+所以你在自媒体里看到的版本更强，不是因为这个 public 仓写少了，而是因为我演示时本来就不是只靠一个 public skill 在工作。
+
+如果你想更接近我演示里的效果，一般至少要满足 3 件事：
+
+1. 有 `takeaway-skill`
+2. 有够用的参考数据
+3. 本地依赖已经装好
+
 ## 默认使用流
 
 这个仓库默认不是“只看一个 skill 文件就结束”。
@@ -285,6 +285,15 @@ cd open-pencil
 - 第三方录屏归档
 - 私有身份同步
 - 从 internal 直接搬出来的私有研究痕迹
+
+## 相关 Skill
+
+- [Takeaway Skill](https://github.com/julilaoshi/takeaway-skill) - 蒸馏参考，拿机制。
+- [Open Pencil](https://github.com/julilaoshi/open-pencil) - 让 agent 执行 Pencil。
+- [FlowMotion Skill](https://github.com/julilaoshi/flowmotion-skill) - 把乱想法变流程图。
+- [Pickupskill](https://github.com/julilaoshi/pickupskill) - 谨慎整理散落文件。
+- [孙子读论文](https://github.com/julilaoshi/sunzi-reading) - 把论文讲成人话。
+- [Callback Skill](https://github.com/julilaoshi/callback-skill) - 把反馈做成升级包。
 
 ## 找到居里老师
 

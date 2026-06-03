@@ -18,92 +18,6 @@
 
 English | [简体中文](./README.zh-CN.md)
 
-## What This Actually Unlocks
-
-- start directing `Pencil` with an agent instead of only editing everything by hand
-- run a real workflow: handshake first, read the canvas, make bounded changes, then review screenshots
-- switch into lock-safe patching once a page has already been hand-tuned
-- package the `Pencil` layer into something easier to reuse, demo, and open-source
-- get closer to the “semi-automatic design” feeling from my social media demos when paired with `takeaway-skill` and real reference data
-
-## Start Here
-
-- [Read the public skill file](./skill/SKILL.md)
-- [Read the Chinese version](./README.zh-CN.md)
-- treat this repo as a public execution layer, not the full internal stack
-- [Watch the video walkthrough](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
-
-## Project Demo
-
-<p align="center">
-  <a href="https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7">
-    <img src="https://img.youtube.com/vi/jLFZp3jxT_g/maxresdefault.jpg" alt="Watch the Open Pencil project demo" width="76%" />
-  </a>
-</p>
-
-## Why This Repository Exists
-
-Many people see my demos and assume:
-
-- one skill
-- one sentence
-- one automatic finished page
-
-That is not the honest version.
-
-This repository exists to open the reusable part first:
-
-- the `Pencil` execution discipline
-- the public workflow shell
-- the release boundary
-- the dependency explanation
-
-So people can run a real chain instead of only watching a cool demo.
-
-## What This Repository Includes
-
-- a public `Open Pencil`
-- a workflow repository for official `Pencil` users
-- a real method for handshake, canvas reads, bounded edits, lock-safe patching, and screenshot review
-- public dependency notes and public/private boundary docs
-- the current public `v1.0` release
-
-## What This Repository Does Not Include
-
-- the official `Pencil` app itself
-- a redistributed official `MCP` package
-- activation state, tokens, emails, or local machine paths
-- private prompt chains
-- private benchmarks
-- private case libraries or premium asset packs
-- third-party screenshots, recordings, or research archives from the internal workflow
-- the stronger internal version that already has more local dependencies and linked skills installed
-
-## Why The Social Media Version Looks Stronger
-
-This repository focuses on `Open Pencil` itself.
-
-But in my real workflow, the strongest results usually come from several parts working together:
-
-- `takeaway-skill`
-  - decides what is worth learning from a reference and what must not be copied directly
-- `Open Pencil`
-  - handles handshake, canvas reads, execution, and screenshot review
-- other linked skills
-  - such as static design, coding, or asset-processing layers
-- local dependencies and tools
-  - the scripts, runtimes, and setup I already prepared on my own machine
-
-I also already have more reference data, distilled notes, intermediate assets, and repeated workflow practice inside the internal version.
-
-So the social media version looks stronger not because this public repo is fake, but because my demos are not powered by one public skill alone.
-
-If you want results closer to my demos, you usually need at least:
-
-1. `takeaway-skill`
-2. enough reference data
-3. a local environment with the needed dependencies already installed
-
 ## How To Load And Use
 
 If this is your first time using Codex, Claude Code, or a Pencil-style workflow, follow this order. This repository can be loaded by an AI coding agent, but the official `Pencil` app still needs to be installed from the official source first.
@@ -211,6 +125,92 @@ In other words:
 - the public `v1.0` is real
 - but it is not a magic package that reproduces my strongest demos without environment, dependencies, or upstream skills
 
+## Project Demo
+
+<p align="center">
+  <a href="https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7">
+    <img src="https://img.youtube.com/vi/jLFZp3jxT_g/maxresdefault.jpg" alt="Watch the Open Pencil project demo" width="76%" />
+  </a>
+</p>
+
+## What This Actually Unlocks
+
+- start directing `Pencil` with an agent instead of only editing everything by hand
+- run a real workflow: handshake first, read the canvas, make bounded changes, then review screenshots
+- switch into lock-safe patching once a page has already been hand-tuned
+- package the `Pencil` layer into something easier to reuse, demo, and open-source
+- get closer to the “semi-automatic design” feeling from my social media demos when paired with `takeaway-skill` and real reference data
+
+## Start Here
+
+- [Read the public skill file](./skill/SKILL.md)
+- [Read the Chinese version](./README.zh-CN.md)
+- treat this repo as a public execution layer, not the full internal stack
+- [Watch the video walkthrough](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
+
+## Why This Repository Exists
+
+Many people see my demos and assume:
+
+- one skill
+- one sentence
+- one automatic finished page
+
+That is not the honest version.
+
+This repository exists to open the reusable part first:
+
+- the `Pencil` execution discipline
+- the public workflow shell
+- the release boundary
+- the dependency explanation
+
+So people can run a real chain instead of only watching a cool demo.
+
+## What This Repository Includes
+
+- a public `Open Pencil`
+- a workflow repository for official `Pencil` users
+- a real method for handshake, canvas reads, bounded edits, lock-safe patching, and screenshot review
+- public dependency notes and public/private boundary docs
+- the current public `v1.0` release
+
+## What This Repository Does Not Include
+
+- the official `Pencil` app itself
+- a redistributed official `MCP` package
+- activation state, tokens, emails, or local machine paths
+- private prompt chains
+- private benchmarks
+- private case libraries or premium asset packs
+- third-party screenshots, recordings, or research archives from the internal workflow
+- the stronger internal version that already has more local dependencies and linked skills installed
+
+## Why The Social Media Version Looks Stronger
+
+This repository focuses on `Open Pencil` itself.
+
+But in my real workflow, the strongest results usually come from several parts working together:
+
+- `takeaway-skill`
+  - decides what is worth learning from a reference and what must not be copied directly
+- `Open Pencil`
+  - handles handshake, canvas reads, execution, and screenshot review
+- other linked skills
+  - such as static design, coding, or asset-processing layers
+- local dependencies and tools
+  - the scripts, runtimes, and setup I already prepared on my own machine
+
+I also already have more reference data, distilled notes, intermediate assets, and repeated workflow practice inside the internal version.
+
+So the social media version looks stronger not because this public repo is fake, but because my demos are not powered by one public skill alone.
+
+If you want results closer to my demos, you usually need at least:
+
+1. `takeaway-skill`
+2. enough reference data
+3. a local environment with the needed dependencies already installed
+
 ## Default Repository Flow
 
 This repository is not meant to end at “read one skill file and stop.”
@@ -288,6 +288,15 @@ The public version does not keep:
 - third-party recording archives
 - private identity sync
 - private internal traces copied directly out of the internal workflow
+
+## Related Skills
+
+- [Takeaway Skill](https://github.com/julilaoshi/takeaway-skill) - distill references into reusable mechanisms.
+- [Open Pencil](https://github.com/julilaoshi/open-pencil) - run Pencil workflows with agents.
+- [FlowMotion Skill](https://github.com/julilaoshi/flowmotion-skill) - turn messy notes into motion flows.
+- [Pickupskill](https://github.com/julilaoshi/pickupskill) - organize messy folders safely.
+- [Sunzi Reading](https://github.com/julilaoshi/sunzi-reading) - explain papers in plain language.
+- [Callback Skill](https://github.com/julilaoshi/callback-skill) - package feedback for Skill upgrades.
 
 ## Find Julilaoshi
 

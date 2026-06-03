@@ -9,7 +9,7 @@
 - [ ] 默认 GitHub 首页 `README.md` 是否是目标默认语言
 - [ ] 是否存在语言切换行，且链接真实可点
 - [ ] 是否明确 public 版本与 internal workflow 的差别
-- [ ] `Install / How To Install` 是否没有抢掉首页前半段的传播位
+- [ ] `Load / How To Load` 是否在首屏靠前，并位于视频演示之前
 - [ ] 是否对比过线上已发布页面，不只看本地草稿
 
 ## 2. Pencil Boundary
