@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Open Pencil v2.0</title>
+    <title>Open Pencil v1.0</title>
     <style>
       :root {
         --paper: #f5efe4;
@@ -308,30 +308,29 @@
   <body>
     <main class="shell">
       <div class="topbar">
-        <div class="mark">Open Pencil v2.0</div>
-        <div>Pencil MCP 工作流 + 免费 Web 微调器</div>
+        <div class="mark">Open Pencil v1.0</div>
+        <div>给官方 Pencil 用户的非官方公开执行层</div>
       </div>
 
       <section class="hero">
         <article class="panel hero-main">
-          <div class="eyebrow">Public v2.0 · Web editor · Pencil-compatible</div>
-          <h1>去年还像幻想，今年已经能在浏览器里微调设计了。</h1>
+          <div class="eyebrow">Public v1.0 · unofficial · Pencil-compatible</div>
+          <h1>去年还像幻想，今年已经能开始半自动设计了。</h1>
           <p class="lead">
-            `Open Pencil` 现在有两条公开路线：官方 Pencil 用户可以继续用 MCP 工作流做握手、读画布、批量改版；
-            普通用户也可以先打开免费的 Web 2.0 编辑器，直接拖拽、缩放、改文字、隐藏面板、导出 HTML。
-            公开版故意保持轻量，把更强的内部自动化和高级案例留到后续版本。
+            `Open Pencil` 可以帮你先做更自动的第一轮搭建，也可以做更稳的半自动协作：先让 agent
+            跑握手、读画布、批量改版，你再自己补字体、拖图片、换素材、修细节。它不是单独一个神奇按钮，
+            而是要和 `takeaway-skill`、参考数据、以及你本地装好的依赖一起联动，才会越来越像你在我自媒体里看到的效果。
           </p>
           <div class="hero-links">
-            <a class="hero-link" href="../web/index.html">Try Web 2.0</a>
             <a class="hero-link" href="../README.zh-CN.md">先看中文版</a>
             <a class="hero-link" href="../README.md">Read English README</a>
             <a class="hero-link" href="../skill/SKILL.md">阅读 Public Skill</a>
           </div>
           <div class="hero-notes">
-            <div class="chip">Web 2.0 可直接打开</div>
-            <div class="chip">Pencil 路线仍先装官方本体</div>
-            <div class="chip">免费 public 层</div>
-            <div class="chip">可微调可导出</div>
+            <div class="chip">先装官方 Pencil</div>
+            <div class="chip">强依赖 takeaway-skill</div>
+            <div class="chip">强依赖参考数据</div>
+            <div class="chip">失败通常是缺依赖</div>
             <div class="chip">不打包官方 MCP</div>
             <div class="chip">内部增强层继续私有</div>
           </div>
@@ -340,15 +339,15 @@
         <aside class="panel hero-side">
           <div class="stat">
             <div class="stat-label">公开定位</div>
-            <div class="stat-value">公众版 v2.0 双路线</div>
+            <div class="stat-value">公众版 v1.0 执行层</div>
           </div>
           <div class="stat">
             <div class="stat-label">最强依赖</div>
-            <div class="stat-value">Web 微调 + Pencil MCP</div>
+            <div class="stat-value">Takeaway + 数据 + 本地依赖</div>
           </div>
           <div class="stat">
             <div class="stat-label">公开的是</div>
-            <div class="stat-value">方法、说明、轻编辑器</div>
+            <div class="stat-value">方法、说明、模板</div>
           </div>
         </aside>
       </section>
@@ -357,13 +356,9 @@
         <article class="panel card">
           <h2>它真正帮你做到什么</h2>
           <p>
-            这不是“看起来很酷但其实跑不起来”的空壳。v2.0 先把免费可打开、可微调、可导出的公开层做出来。
+            这不是“看起来很酷但其实跑不起来”的空壳。它已经把 `Pencil` 这一层真正能复用的执行纪律开出来了。
           </p>
           <div class="list">
-            <div class="item">
-              <strong>浏览器里直接微调</strong>
-              <span>打开 Web 2.0，就能移动文字、缩放元素、调整颜色和导出 HTML。</span>
-            </div>
             <div class="item">
               <strong>全自动用嘴做设计</strong>
               <span>不用手写复杂提示词，直接用嘴语音输入也能做第一轮设计，默认更建议语音输入。</span>
@@ -399,7 +394,7 @@
             </div>
             <div class="item">
               <strong>不是一键魔法包</strong>
-              <span>Web 2.0 负责轻微调；Pencil 路线仍需要 `takeaway-skill`、参考数据和本地依赖才能接近最强公开视频效果。</span>
+              <span>它不能脱离 `takeaway-skill`、参考数据和本地依赖，独立复现我最强演示效果。</span>
             </div>
             <div class="item">
               <strong>不是内部完整版</strong>
@@ -411,7 +406,7 @@
         <article class="panel card full">
           <h2>为什么我自媒体里的版本看起来更强</h2>
           <p>
-            因为我的公开视频，本来就不是只靠一个 public skill 在工作。
+            因为我演示时，本来就不是只靠一个 public skill 在工作。
           </p>
           <div class="steps">
             <div class="step">
@@ -440,28 +435,28 @@
         <article class="panel card full">
           <h2>如何载入和使用</h2>
           <p>
-            如果只是想试免费 Web 版，直接打开网页；如果要进入官方 Pencil 工作流，再安装官方 Pencil 并做握手测试。
+            不要一上来就让 agent 干整页设计，也不要让它跑一堆安装命令。先载入 Skill，再单独做握手测试。
           </p>
           <div class="steps">
             <div class="step">
               <small>01</small>
-              普通用户先打开 `web/index.html`，不用安装 App，也不用跑 npm / pip。
+              先从官方渠道在本机安装 Pencil，并确认 MCP 工具已经出现。
             </div>
             <div class="step">
               <small>02</small>
-              在 Web 2.0 里用右侧面板微调页面，或让 Codex 帮你改设计数据。
+              这个仓库不是 npm / pip 包，也不是 App 安装器，不需要跑长安装脚本。
             </div>
             <div class="step">
               <small>03</small>
-              需要官方 Pencil 时，再从官方渠道安装 Pencil，并确认 MCP 工具已经出现。
+              打开这个仓库后，先读 `skill/SKILL.md`，确认 Skill 可读取后就停。
             </div>
             <div class="step">
               <small>04</small>
-              打开这个仓库后，先读 `skill/SKILL.md`，确认当前要走 Web 2.0 还是 Pencil MCP。
+              再单独让本地 agent 做握手测试，确认能读画布、能截图、能调用工具。
             </div>
             <div class="step">
               <small>05</small>
-              Pencil MCP 握手通过后，再结合 `takeaway-skill` 和参考数据正式执行。
+              握手通过后，再结合 `takeaway-skill` 和参考数据正式执行。
             </div>
           </div>
         </article>
@@ -482,7 +477,7 @@
             </div>
             <div class="item">
               <strong>缺少上游和数据</strong>
-              <span>没接上 `takeaway-skill`，或者没给够截图、录屏、蒸馏卡，执行层自然不会像公开视频里那么强。</span>
+              <span>没接上 `takeaway-skill`，或者没给够截图、录屏、蒸馏卡，执行层自然不会像演示里那么强。</span>
             </div>
           </div>
         </article>
@@ -490,39 +485,39 @@
         <article class="panel card full">
           <h2>默认使用流</h2>
           <p>
-            2.0 之后有两条路线：普通用户先走 Web，专业流程再走 Pencil MCP。
+            真正常用的路线不是“只读一个 skill 文件”，而是一整条链路一起工作。
           </p>
           <div class="steps">
             <div class="step">
               <small>01</small>
-              Web 2.0：打开 `web/index.html`，先完成基础微调。
+              先装好官方 `Pencil`。
             </div>
             <div class="step">
               <small>02</small>
-              点击 Hide 预览，确认后用 Done 收起编辑界面。
+              用 `takeaway-skill` 先判断参考里什么值得拿。
             </div>
             <div class="step">
               <small>03</small>
-              Pencil MCP：先装官方 `Pencil`，再做握手与截图复核。
+              准备好截图、录屏、蒸馏卡等参考数据。
             </div>
             <div class="step">
               <small>04</small>
-              高级参考驱动任务，再接 `takeaway-skill` 和参考数据。
+              再用 `Open Pencil` 跑握手、读画布、改动执行和截图复核。
             </div>
           </div>
         </article>
 
         <article class="panel card full">
-          <h2>v2.0 真话版</h2>
+          <h2>v1.0 真话版</h2>
           <p>
-            这是一个公开的 <strong>v2.0</strong>。它新增了免费 Web 微调器，但仍然不是内部完整版；更复杂的自动化、私有风格包、benchmark 和商业功能会继续留在后续版本。
+            这是一个公开的 <strong>v1.0</strong>。它是真的能用，但它公开的是方法层和执行层，不是我内部已经装好一堆依赖、联动多 skill、准备了更多数据的完整增强版。
           </p>
         </article>
 
         <article class="panel card full">
           <h2>找到居里老师</h2>
           <p>
-            如果你是先从 GitHub 进来的，也可以在这些平台继续看我平时怎么讲方法、怎么更新这条链路。
+            如果你是先从 GitHub 进来的，也可以在这些平台继续看我平时怎么演示、怎么讲方法、怎么更新这条链路。
           </p>
           <div class="list">
             <div class="item">
