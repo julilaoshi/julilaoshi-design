@@ -39,16 +39,18 @@ description: Public-safe Open Pencil workflow for official Pencil MCP execution 
 
 1. Keep the official dependency external.
 2. Choose the mode first: `Pencil MCP` or `Open Pencil Web 2.0`.
-3. In Pencil MCP mode, handshake first, then work.
-4. In Web 2.0 mode, verify the static HTML opens locally before editing behavior.
-5. Read structure before editing.
-6. Batch when possible, do not fragment edits.
-7. Locked pages get only surgical changes.
-8. Always verify with a screenshot or equivalent review step.
-9. Public repos ship method, templates, and checks, not the whole moat.
-10. Never commit tokens, local paths, machine-specific state, or private screenshots.
-11. Third-party tools and assets must follow their own licenses.
-12. When references matter, use `takeaway-skill` first instead of guessing strategy inside the execution layer.
+3. If the user has not clearly chosen a mode, ask the mode question before editing anything.
+4. Reply in the user's language unless they ask otherwise.
+5. In Pencil MCP mode, handshake first, then work.
+6. In Web 2.0 mode, verify the static HTML opens locally before editing behavior.
+7. Read structure before editing.
+8. Batch when possible, do not fragment edits.
+9. Locked pages get only surgical changes.
+10. Always verify with a screenshot or equivalent review step.
+11. Public repos ship method, templates, and checks, not the whole moat.
+12. Never commit tokens, local paths, machine-specific state, or private screenshots.
+13. Third-party tools and assets must follow their own licenses.
+14. When references matter, use `takeaway-skill` first instead of guessing strategy inside the execution layer.
 
 ## Default Workflow
 
@@ -57,6 +59,32 @@ description: Public-safe Open Pencil workflow for official Pencil MCP execution 
 - Use `Pencil MCP` mode when the task is inside official Pencil, `.pen` files, or Pencil MCP tooling.
 - Use `Open Pencil Web 2.0` mode when the user wants a free browser-based editor, HTML landing page tweaking, or a Windows-friendly public path.
 - If the user only wants a public starter that ordinary people can open, prefer Web 2.0.
+- If no mode has been chosen, ask exactly one short mode question and wait:
+
+```text
+Which mode do you want to use?
+
+A. Pencil MCP Mode
+Use official Pencil + MCP. Best if you already installed Pencil and want to edit .pen files.
+
+B. Web Editor Mode
+Use the free browser editor. Best for Windows users, beginners, or HTML export.
+```
+
+Chinese version when the user is writing in Chinese:
+
+```text
+你想使用哪种模式？
+
+A. Pencil MCP 模式
+使用官方 Pencil + MCP。适合已经安装 Pencil、想编辑 .pen 文件的用户。
+
+B. Web Editor 模式
+使用免费的浏览器编辑器。适合 Windows 用户、初学者，或想导出 HTML 的用户。
+```
+
+- Do not run a Pencil MCP handshake before the user chooses `A`.
+- Do not open or edit `web/index.html` before the user chooses `B`, unless the user has already clearly asked for the Web editor.
 
 ## Open Pencil Web 2.0 Workflow
 
@@ -258,13 +286,19 @@ When reporting work, include:
 
 ```text
 Read skill/SKILL.md first.
-Use the Pencil public skill for this .pen task.
-If there is a reference target, use takeaway-skill first and bring me the locked reference decisions.
-If reference evidence is weak, say so before editing.
-Start with a lightweight Pencil handshake, then read the canvas before editing.
-Tell me what this round will change and what it will not change.
-If the page is already hand-tuned, switch to manual-lock behavior and only patch named targets.
-Finish with a screenshot review and tell me whether anything else was unintentionally moved.
+Use Open Pencil 2.0.
+
+Before editing anything, ask me to choose:
+A. Pencil MCP Mode
+B. Web Editor Mode
+
+If I choose A, verify official Pencil and MCP tools first. If anything is missing, tell me what is missing and stop. Do not fake the handshake.
+
+If I choose B, open or guide me to web/index.html, explain the right-side editor, and help me edit or export the page.
+
+Reply in my language.
+Do not run npm install, pip install, build commands, or long setup scripts.
+Do not modify the core rules of this Skill.
 ```
 
 ## Read These References When Needed

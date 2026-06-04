@@ -1,4 +1,4 @@
 interface:
   display_name: "Open Pencil"
   short_description: "Open Pencil 公开版：Pencil MCP 执行 + Web 2.0 浏览器微调器"
-  default_prompt: "Use $open-pencil when a task needs official Pencil MCP execution, .pen canvas edits, screenshot review, or the free Open Pencil Web 2.0 HTML editor. Choose Pencil MCP mode for official Pencil work, or Web 2.0 mode for browser-first visual tweaking without bundling official Pencil or leaking private assets."
+  default_prompt: "Use $open-pencil when a task needs official Pencil MCP execution or the free Open Pencil Web 2.0 HTML editor. If the user has not chosen a mode, ask them to choose A: Pencil MCP Mode or B: Web Editor Mode before editing anything. Reply in the user's language, avoid long installs, do not fake Pencil handshakes, and never bundle official Pencil or private assets."

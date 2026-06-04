@@ -2,25 +2,27 @@
 
 ## Description
 
-Public Open Pencil workflow layer for agent-assisted Pencil design: handshake, canvas reading, bounded edits, lock-safe patching, and screenshot review.
+Public Open Pencil 2.0 workflow: choose Pencil MCP for official Pencil canvas work, or Web Editor for free browser-based design-to-HTML tweaking.
 
 ## Website
 
-Use the Web 2.0 editor link if available.
+Use the repository URL or Web 2.0 editor link if available.
 
 ## Topics
 
 ```text
 pencil
+open-pencil
 design-automation
 ai-design
 codex-skill
 agent-workflow
 visual-design
+html-editor
 workflow
 open-source
 ```
 
 ## Boundary Note
 
-This repository is a public workflow layer. It does not include the official Pencil app, official MCP packages, activation state, private prompt chains, private case libraries, or the stronger internal workflow shown in public videos.
+This repository is a public workflow layer. It does not include the official Pencil app, official MCP packages, activation state, private prompt chains, private case libraries, or the stronger internal workflow shown in public videos. Public 2.0 stays lightweight; stronger 3.0 experiments may be shared separately with a smaller community later.

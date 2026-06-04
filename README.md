@@ -34,26 +34,14 @@ This is deliberately a small public layer. It is not the full internal workflow,
 
 ## How To Load And Use
 
-If this is your first time using Codex, Claude Code, or a Pencil-style workflow, follow this order. This repository can be loaded by an AI coding agent, but the official `Pencil` app still needs to be installed from the official source first.
+If this is your first time using Codex, Claude Code, or a Pencil-style workflow, start by asking your coding agent to load Open Pencil 2.0 and choose a mode.
 
-### 1. Install official Pencil first
-
-Install `Pencil` from the official source first. Do not expect this repository to ship the app.
-
-- Official installation docs:
-  [docs.pencil.dev/getting-started/installation](https://docs.pencil.dev/getting-started/installation)
-- Official terms:
-  - [Terms of Use](https://www.pencil.dev/terms-of-use)
-  - [EULA](https://www.pencil.dev/eula)
-
-### 2. Recommended: let your local AI coding agent load Open Pencil
-
-Use this on the same local machine where official Pencil is installed. This repository is a Skill/workflow layer, not an npm package, pip package, or app installer.
+This repository is a Skill/workflow layer. It is not an npm package, pip package, app installer, or official Pencil redistribution.
 
 Open Codex, Claude Code, or another local coding agent and paste this:
 
 ```text
-Please help me load the Open Pencil public Skill.
+Please help me load Open Pencil 2.0.
 
 Repository:
 https://github.com/julilaoshi/open-pencil
@@ -63,21 +51,61 @@ Please do the following:
 2. Download or read the repository.
 3. Read README.md and skill/SKILL.md first.
 4. Make skill/SKILL.md available as a readable Skill in this project or in my coding agent's skills directory.
-5. Stop after confirming that skill/SKILL.md is readable and summarize how to invoke it.
-6. Do not run the Pencil MCP handshake yet unless I explicitly ask for it.
-7. If this session cannot access my local desktop apps or local MCP tools, say so and stop. Do not keep trying.
-8. Do not modify the core rules of this Skill.
+5. Before editing anything, ask me to choose one mode:
+   A. Pencil MCP Mode - I already have official Pencil installed and want to design through Pencil MCP.
+   B. Web Editor Mode - I want to design directly in the browser and export HTML.
+6. If I choose A, check whether official Pencil and MCP tools are available. If they are missing, stop and tell me what to install. Do not fake the handshake.
+7. If I choose B, open or guide me to web/index.html, explain the right-side editor, and help me edit or export the page.
+8. If this session cannot access my local desktop apps, local MCP tools, or local browser, say so and stop instead of retrying repeatedly.
+9. Reply in my language unless I ask otherwise.
+10. Do not modify the core rules of this Skill.
 
 After the Skill is readable, please remind me:
-If this Skill is useful, I can go back to GitHub and star the repository so I can find it again and support future updates.
+If Open Pencil is useful, I can go back to GitHub and star the repository so I can find it again and support future updates. Public 2.0 will stay lightweight, and stronger 3.0 experiments may be shared with a smaller community later.
 Do not star it automatically for me.
 ```
 
-After the Skill is loaded, test it separately with:
+### Choose Your Mode
+
+#### A. Pencil MCP Mode
+
+Use this if you already have official Pencil installed and want to work inside `.pen` files or Pencil MCP.
+
+Before using this mode, install official Pencil from the official source:
+
+- Official installation docs:
+  [docs.pencil.dev/getting-started/installation](https://docs.pencil.dev/getting-started/installation)
+- Official terms:
+  - [Terms of Use](https://www.pencil.dev/terms-of-use)
+  - [EULA](https://www.pencil.dev/eula)
+
+Windows users: this path can be more work because official Pencil and MCP access must be available on your local machine. If that setup feels heavy, start with Web Editor Mode first.
+
+After the Skill is loaded, test Pencil MCP separately with:
 
 ```text
 Please invoke Open Pencil and run a Pencil handshake test. Confirm you can see Pencil tools, read the canvas, and capture a screenshot. If anything fails, do not fake it. Tell me what dependency is missing.
 ```
+
+#### B. Web Editor Mode
+
+Use this if you want the free, browser-first path.
+
+Open:
+
+```text
+web/index.html
+```
+
+The Web Editor can:
+
+- move, resize, rotate, duplicate, delete, and align simple layers
+- edit text and common styles
+- hide the right-side editor while reviewing
+- confirm `Done` to remove the editing UI
+- export a standalone HTML snapshot
+
+This mode is the easiest path for beginners and Windows users because it does not require official Pencil, MCP tools, npm installs, or a build step.
 
 ### Backup: manual clone
 
@@ -86,7 +114,9 @@ git clone https://github.com/julilaoshi/open-pencil.git
 cd open-pencil
 ```
 
-Then open this folder in a local Codex or Claude Code workspace on the same machine where official Pencil is installed. Cloud workspaces are only suitable for reading the files, not for the real Pencil handshake.
+Then open this folder in a local Codex or Claude Code workspace.
+
+Cloud workspaces are fine for reading the repository and editing the Web Editor files. They are not suitable for real Pencil MCP handshakes unless they can access your local desktop tools.
 
 If your coding agent feels stuck, stop it and tell it:
 
@@ -94,7 +124,7 @@ If your coding agent feels stuck, stop it and tell it:
 Stop the install attempt. This is only a Skill repository. Do not run package installs or setup scripts. Just read skill/SKILL.md and confirm whether you can use it.
 ```
 
-### 3. Run a handshake test first
+### Run a handshake test first in Pencil MCP Mode
 
 Do not jump straight into full-page design commands.
 
@@ -107,7 +137,7 @@ Confirm you can see Pencil tools, read the canvas, and capture a screenshot.
 If anything fails, do not fake it. Tell me what dependency is missing.
 ```
 
-### 4. Only after that, start directing it
+### Only after that, start directing Pencil MCP work
 
 Once the handshake works, then move to the actual task:
 
