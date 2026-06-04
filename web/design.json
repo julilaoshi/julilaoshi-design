@@ -1,0 +1,463 @@
+{
+  "canvas": {
+    "width": 1080,
+    "height": 1520,
+    "background": "#070707",
+    "intent": "julilaoshi-ip-cv-poster"
+  },
+  "tokens": {
+    "colors": {
+      "bg": "#070707",
+      "ink": "#f5f5f2",
+      "muted": "#b5b5b0",
+      "dim": "#797973",
+      "accent": "#2ad36b",
+      "panel": "#171917",
+      "panelSoft": "#101210"
+    },
+    "fonts": {
+      "display": "Georgia, 'Times New Roman', serif",
+      "body": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+    },
+    "radius": {
+      "card": 8,
+      "pill": 999
+    },
+    "spacing": {
+      "step": 8
+    },
+    "shadows": {
+      "soft": "0 22px 70px rgba(0, 0, 0, 0.42)"
+    }
+  },
+  "constraints": {
+    "safeAreas": [
+      {
+        "x": 64,
+        "y": 64,
+        "width": 952,
+        "height": 1392
+      }
+    ],
+    "alignmentAnchors": [
+      {
+        "id": "left_column",
+        "x": 70
+      },
+      {
+        "id": "right_column",
+        "x": 690
+      },
+      {
+        "id": "bottom_line",
+        "y": 1328
+      }
+    ],
+    "protectedElements": [
+      "hero_portrait"
+    ],
+    "minFontSize": 12,
+    "maxTextLines": {
+      "name_cn": 1,
+      "name_en": 1,
+      "identity_line": 2,
+      "bottom_summary_text": 4
+    }
+  },
+  "elements": [
+    {
+      "id": "bg_vignette",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 0,
+      "y": 0,
+      "width": 1080,
+      "height": 1520,
+      "style": {
+        "fill": "#070707",
+        "radius": 0
+      },
+      "locked": true,
+      "layer": 1
+    },
+    {
+      "id": "hero_portrait",
+      "type": "image",
+      "src": "../../../../02_juli/assets/profile/jl-profile-wide.png",
+      "alt": "Julilaoshi profile portrait",
+      "x": 308,
+      "y": 254,
+      "width": 770,
+      "height": 1030,
+      "style": {
+        "radius": 0,
+        "objectFit": "cover",
+        "objectPosition": "58% 50%",
+        "filter": "grayscale(1) contrast(1.16) brightness(0.72)",
+        "opacity": 0.92
+      },
+      "locked": false,
+      "layer": 4
+    },
+    {
+      "id": "portrait_scrim_left",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 0,
+      "y": 0,
+      "width": 650,
+      "height": 1520,
+      "style": {
+        "fill": "rgba(7, 7, 7, 0.70)",
+        "radius": 0
+      },
+      "locked": true,
+      "layer": 5
+    },
+    {
+      "id": "portrait_scrim_bottom",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 0,
+      "y": 1100,
+      "width": 1080,
+      "height": 420,
+      "style": {
+        "fill": "rgba(7, 7, 7, 0.82)",
+        "radius": 0
+      },
+      "locked": true,
+      "layer": 6
+    },
+    {
+      "id": "accent_rule",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 72,
+      "y": 88,
+      "width": 96,
+      "height": 8,
+      "style": {
+        "fill": "#2ad36b",
+        "radius": 999
+      },
+      "locked": false,
+      "layer": 20
+    },
+    {
+      "id": "name_cn",
+      "type": "text",
+      "text": "居里老师",
+      "x": 70,
+      "y": 118,
+      "width": 390,
+      "height": 92,
+      "style": {
+        "fontSize": 76,
+        "fontWeight": 900,
+        "lineHeight": 1.05,
+        "color": "#f5f5f2",
+        "fontFamily": "Inter, ui-sans-serif, system-ui"
+      },
+      "locked": false,
+      "layer": 22
+    },
+    {
+      "id": "name_en",
+      "type": "text",
+      "text": "JULI",
+      "x": 72,
+      "y": 212,
+      "width": 350,
+      "height": 112,
+      "style": {
+        "fontSize": 104,
+        "fontWeight": 800,
+        "lineHeight": 0.94,
+        "color": "#2ad36b",
+        "fontFamily": "Georgia, 'Times New Roman', serif"
+      },
+      "locked": false,
+      "layer": 22
+    },
+    {
+      "id": "identity_line",
+      "type": "text",
+      "text": "大学艺术老师 | Vibe Coding | 独立开发",
+      "x": 76,
+      "y": 335,
+      "width": 520,
+      "height": 42,
+      "style": {
+        "fontSize": 24,
+        "fontWeight": 700,
+        "lineHeight": 1.3,
+        "color": "#b5b5b0",
+        "fontFamily": "Inter, ui-sans-serif, system-ui"
+      },
+      "locked": false,
+      "layer": 22
+    },
+    {
+      "id": "tag_ai_art",
+      "type": "pill",
+      "text": "AI 艺术",
+      "x": 76,
+      "y": 392,
+      "width": 142,
+      "height": 42,
+      "style": {
+        "fill": "#18331f",
+        "color": "#7dffae",
+        "fontSize": 17,
+        "fontWeight": 800,
+        "radius": 999
+      },
+      "locked": false,
+      "layer": 24
+    },
+    {
+      "id": "tag_workflow",
+      "type": "pill",
+      "text": "创作工具",
+      "x": 234,
+      "y": 392,
+      "width": 154,
+      "height": 42,
+      "style": {
+        "fill": "#22251f",
+        "color": "#f5f5f2",
+        "fontSize": 17,
+        "fontWeight": 800,
+        "radius": 999
+      },
+      "locked": false,
+      "layer": 24
+    },
+    {
+      "id": "journey_card",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 70,
+      "y": 538,
+      "width": 440,
+      "height": 176,
+      "style": {
+        "fill": "rgba(255, 255, 255, 0.08)",
+        "radius": 8,
+        "shadow": "0 22px 70px rgba(0, 0, 0, 0.24)"
+      },
+      "locked": true,
+      "layer": 12
+    },
+    {
+      "id": "journey_text",
+      "type": "text",
+      "text": "CREATIVE JOURNEY\n2025.01  AIGC 创作与内容实践\n2025.07  AI 辅助原型与交互实验\n2026.01  进入 Vibe Coding 阶段",
+      "x": 100,
+      "y": 568,
+      "width": 378,
+      "height": 122,
+      "style": {
+        "fontSize": 22,
+        "fontWeight": 750,
+        "lineHeight": 1.42,
+        "color": "#f5f5f2",
+        "fontFamily": "Inter, ui-sans-serif, system-ui"
+      },
+      "locked": false,
+      "layer": 25
+    },
+    {
+      "id": "content_card",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 70,
+      "y": 746,
+      "width": 440,
+      "height": 206,
+      "style": {
+        "fill": "rgba(255, 255, 255, 0.08)",
+        "radius": 8,
+        "shadow": "0 22px 70px rgba(0, 0, 0, 0.20)"
+      },
+      "locked": true,
+      "layer": 12
+    },
+    {
+      "id": "content_text",
+      "type": "text",
+      "text": "WHAT YOU'LL SEE\nVibe Coding / AI 工作流 / AI 艺术\n创作工具 / 独立开发\n网页实验 / 数字作品",
+      "x": 100,
+      "y": 778,
+      "width": 382,
+      "height": 142,
+      "style": {
+        "fontSize": 24,
+        "fontWeight": 760,
+        "lineHeight": 1.48,
+        "color": "#f5f5f2",
+        "fontFamily": "Inter, ui-sans-serif, system-ui"
+      },
+      "locked": false,
+      "layer": 25
+    },
+    {
+      "id": "project_card",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 70,
+      "y": 986,
+      "width": 440,
+      "height": 176,
+      "style": {
+        "fill": "rgba(255, 255, 255, 0.08)",
+        "radius": 8,
+        "shadow": "0 22px 70px rgba(0, 0, 0, 0.18)"
+      },
+      "locked": true,
+      "layer": 12
+    },
+    {
+      "id": "project_text",
+      "type": "text",
+      "text": "PROJECT POOL\ntakeaway-skill\nopen-pencil\nsunzi-reading",
+      "x": 100,
+      "y": 1018,
+      "width": 378,
+      "height": 112,
+      "style": {
+        "fontSize": 25,
+        "fontWeight": 780,
+        "lineHeight": 1.42,
+        "color": "#f5f5f2",
+        "fontFamily": "Inter, ui-sans-serif, system-ui"
+      },
+      "locked": false,
+      "layer": 25
+    },
+    {
+      "id": "about_card",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 684,
+      "y": 112,
+      "width": 328,
+      "height": 268,
+      "style": {
+        "fill": "rgba(16, 18, 16, 0.72)",
+        "radius": 8,
+        "shadow": "0 22px 70px rgba(0, 0, 0, 0.24)"
+      },
+      "locked": true,
+      "layer": 13
+    },
+    {
+      "id": "about_text",
+      "type": "text",
+      "text": "ABOUT\n不空讲概念，也不只发结果图。\n\n更在意把一个具体问题拆开，再一步步做出来给你看。",
+      "x": 714,
+      "y": 144,
+      "width": 270,
+      "height": 204,
+      "style": {
+        "fontSize": 22,
+        "fontWeight": 720,
+        "lineHeight": 1.5,
+        "color": "#f5f5f2",
+        "fontFamily": "Inter, ui-sans-serif, system-ui"
+      },
+      "locked": false,
+      "layer": 26
+    },
+    {
+      "id": "now_card",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 684,
+      "y": 412,
+      "width": 328,
+      "height": 240,
+      "style": {
+        "fill": "rgba(16, 18, 16, 0.64)",
+        "radius": 8,
+        "shadow": "0 22px 70px rgba(0, 0, 0, 0.18)"
+      },
+      "locked": true,
+      "layer": 13
+    },
+    {
+      "id": "now_text",
+      "type": "text",
+      "text": "NOW BUILDING\n网页原型、App、MCP 工作流\n交互实验、数字作品\n把艺术老师推进到代码与界面里",
+      "x": 714,
+      "y": 444,
+      "width": 270,
+      "height": 174,
+      "style": {
+        "fontSize": 21,
+        "fontWeight": 720,
+        "lineHeight": 1.52,
+        "color": "#f5f5f2",
+        "fontFamily": "Inter, ui-sans-serif, system-ui"
+      },
+      "locked": false,
+      "layer": 26
+    },
+    {
+      "id": "bottom_summary_card",
+      "type": "shape",
+      "shape": "roundedRect",
+      "x": 70,
+      "y": 1254,
+      "width": 940,
+      "height": 174,
+      "style": {
+        "fill": "#101210",
+        "radius": 8,
+        "shadow": "0 28px 90px rgba(0, 0, 0, 0.44)"
+      },
+      "locked": true,
+      "layer": 14
+    },
+    {
+      "id": "bottom_summary_title",
+      "type": "text",
+      "text": "WHY FOLLOW",
+      "x": 104,
+      "y": 1288,
+      "width": 230,
+      "height": 34,
+      "style": {
+        "fontSize": 24,
+        "fontWeight": 900,
+        "lineHeight": 1.2,
+        "color": "#2ad36b",
+        "fontFamily": "Inter, ui-sans-serif, system-ui"
+      },
+      "locked": false,
+      "layer": 28
+    },
+    {
+      "id": "bottom_summary_text",
+      "type": "text",
+      "text": "不是空讲 AI。更像是把老师、代码、工具、界面和表达接起来，给你看一个想法怎样长成作品。",
+      "x": 104,
+      "y": 1332,
+      "width": 850,
+      "height": 58,
+      "style": {
+        "fontSize": 25,
+        "fontWeight": 740,
+        "lineHeight": 1.44,
+        "color": "#f5f5f2",
+        "fontFamily": "Inter, ui-sans-serif, system-ui"
+      },
+      "locked": false,
+      "layer": 28
+    }
+  ],
+  "exports": [
+    "html"
+  ]
+}

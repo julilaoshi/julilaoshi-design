@@ -11,7 +11,7 @@ Safe to open:
 - release checklist
 - public skill file
 - simple landing page
-- safe demo shell
+- safe starter shell
 
 This layer is good for:
 
@@ -60,4 +60,3 @@ Private should keep:
 - conversion strength
 - differentiation
 - repeatable premium output
-

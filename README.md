@@ -13,10 +13,24 @@
 </p>
 
 <p align="center">
-  Public <code>v1.0</code> now. The stronger versions shown on my social media are closer to a workflow where Open Pencil, takeaway, local dependencies, and other linked skills all work together.
+  Public <code>v2.0</code> now ships two paths: a Pencil-compatible Skill workflow and a small browser-first Web editor for people who just need free visual tweaking.
 </p>
 
 English | [简体中文](./README.zh-CN.md)
+
+## Open Pencil Web 2.0
+
+Open Pencil now has a public Web 2.0 path for people who do not want to install the official Pencil app first.
+
+Try the free static editor:
+
+- open [`web/index.html`](./web/index.html)
+- drag, resize, rotate, duplicate, delete, align, and edit simple layers
+- hide the editor while reviewing
+- click `Done` to remove the editing UI from the final page
+- export a standalone HTML snapshot
+
+This is deliberately a small public layer. It is not the full internal workflow, and it does not include private style packs, private prompt chains, or advanced paid features planned for later versions.
 
 ## How To Load And Use
 
@@ -122,35 +136,28 @@ Much more often, it means one of these is still missing:
 
 In other words:
 
-- the public `v1.0` is real
-- but it is not a magic package that reproduces my strongest demos without environment, dependencies, or upstream skills
-
-## Project Demo
-
-<p align="center">
-  <a href="https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7">
-    <img src="https://img.youtube.com/vi/jLFZp3jxT_g/maxresdefault.jpg" alt="Watch the Open Pencil project demo" width="76%" />
-  </a>
-</p>
+- the public `v1.0` Pencil-compatible workflow is real
+- the public `v2.0` Web editor is free and browser-first
+- but it is not a magic package that reproduces my strongest public videos without environment, dependencies, or upstream skills
 
 ## What This Actually Unlocks
 
 - start directing `Pencil` with an agent instead of only editing everything by hand
 - run a real workflow: handshake first, read the canvas, make bounded changes, then review screenshots
 - switch into lock-safe patching once a page has already been hand-tuned
-- package the `Pencil` layer into something easier to reuse, demo, and open-source
-- get closer to the “semi-automatic design” feeling from my social media demos when paired with `takeaway-skill` and real reference data
+- package the `Pencil` layer into something easier to reuse and open-source
+- get closer to the “semi-automatic design” feeling from my public videos when paired with `takeaway-skill` and real reference data
 
 ## Start Here
 
 - [Read the public skill file](./skill/SKILL.md)
 - [Read the Chinese version](./README.zh-CN.md)
 - treat this repo as a public execution layer, not the full internal stack
-- [Watch the video walkthrough](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
+- [Open the Web 2.0 editor](./web/index.html)
 
 ## Why This Repository Exists
 
-Many people see my demos and assume:
+Many people see my public videos and assume:
 
 - one skill
 - one sentence
@@ -165,7 +172,7 @@ This repository exists to open the reusable part first:
 - the release boundary
 - the dependency explanation
 
-So people can run a real chain instead of only watching a cool demo.
+So people can run a real chain instead of only watching a cool video.
 
 ## What This Repository Includes
 
@@ -173,7 +180,7 @@ So people can run a real chain instead of only watching a cool demo.
 - a workflow repository for official `Pencil` users
 - a real method for handshake, canvas reads, bounded edits, lock-safe patching, and screenshot review
 - public dependency notes and public/private boundary docs
-- the current public `v1.0` release
+- the current public `v2.0` release, including the lightweight Web editor
 
 ## What This Repository Does Not Include
 
@@ -203,9 +210,9 @@ But in my real workflow, the strongest results usually come from several parts w
 
 I also already have more reference data, distilled notes, intermediate assets, and repeated workflow practice inside the internal version.
 
-So the social media version looks stronger not because this public repo is fake, but because my demos are not powered by one public skill alone.
+So the social media version looks stronger not because this public repo is fake, but because my public videos are not powered by one public skill alone.
 
-If you want results closer to my demos, you usually need at least:
+If you want results closer to my public videos, you usually need at least:
 
 1. `takeaway-skill`
 2. enough reference data
@@ -215,7 +222,7 @@ If you want results closer to my demos, you usually need at least:
 
 This repository is not meant to end at “read one skill file and stop.”
 
-The default flow is:
+The default Pencil-compatible flow is:
 
 1. install official `Pencil`
 2. use `takeaway-skill` to decide what is worth taking from the reference
@@ -229,10 +236,18 @@ In short:
 - `Open Pencil` handles execution
 - reference data determines how far the workflow can really go
 
+The default Web 2.0 flow is simpler:
+
+1. open `web/index.html`
+2. ask Codex to adjust the page or use the right-side editor by hand
+3. hide the panel while reviewing
+4. click `Done` only when the page is ready
+5. export a final HTML snapshot
+
 ## Structure
 
 - `skill/SKILL.md` - public Pencil skill
-- `demo/` - public-safe fake brief and copyable prompts
+- `web/` - public Open Pencil Web 2.0 static editor
 - `references/` - dependency notes and public boundary docs
 - `agents/openai.yaml` - skill UI metadata
 - `site/index.html` - landing page
@@ -247,7 +262,7 @@ In short:
 ## Language Strategy
 
 - the repo ships with both English and Chinese docs
-- the Chinese version is the clearest place to explain the honest `v1.0` boundary
+- the Chinese version is the clearest place to explain the honest public/free boundary
 - the English version is optimized for GitHub visitors
 
 ## License And Brand Boundary

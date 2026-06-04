@@ -1,6 +1,6 @@
 ---
-name: pencil-compatible-skill
-description: Public-safe Pencil execution skill for creators using official Pencil and its local MCP tools. Use when a task has already entered Pencil, .pen, or Pencil MCP execution and you need handshake, canvas reads, batch edits, screenshot review, lock-safe patches, and public-safe release boundaries without redistributing official Pencil or leaking private assets.
+name: open-pencil
+description: Public-safe Open Pencil workflow for official Pencil MCP execution and the free browser-first Open Pencil Web 2.0 editor. Use when a task needs Pencil handshake/canvas edits, .pen execution, screenshot review, or lightweight HTML design-to-web tweaking without redistributing official Pencil or leaking private assets.
 ---
 
 # Open Pencil
@@ -8,15 +8,19 @@ description: Public-safe Pencil execution skill for creators using official Penc
 ## Overview
 
 - This is a public-safe execution skill for official Pencil users.
+- It also includes Open Pencil Web 2.0, a small free static HTML editor for browser-first visual tweaking.
 - It is unofficial and does not grant redistribution rights for Pencil.
-- It assumes every user installs Pencil from the official source on their own machine.
+- Pencil MCP mode assumes every user installs Pencil from the official source on their own machine.
+- Web 2.0 mode does not require official Pencil, npm installs, or a build step.
 - It handles execution discipline, not whole-page design strategy.
 - It becomes much stronger when paired with `takeaway-skill` and enough reference data.
 
 ## Use This Skill When
 
 - the user says `Pencil`, `.pen`, `Pencil MCP`, `screenshot review`, or `continue in Pencil`
+- the user says `Open Pencil Web`, `Web 2.0`, `HTML editor`, `design-to-HTML`, or asks for browser-based visual tweaking
 - a task has already entered `.pen` editing, canvas changes, or Pencil MCP execution
+- a task needs a lightweight public HTML editor with right-side controls, drag/resize/rotate, and export
 - you need public-safe handshake, canvas reads, batch edits, screenshot review, or lock-safe patches
 - you are releasing a public repo and need the Pencil layer to stay useful without leaking private assets
 
@@ -25,6 +29,7 @@ description: Public-safe Pencil execution skill for creators using official Penc
 - deciding the whole page concept, page skeleton, or product architecture
 - deciding what a reference is worth taking without upstream distillation
 - bundling or redistributing official Pencil
+- promising the Web 2.0 editor is a full Figma, Illustrator, or internal Open Pencil replacement
 - shipping activation files, tokens, or account state
 - leaking internal benchmark packs or private case libraries
 - redistributing third-party paid tools without clear permission
@@ -33,17 +38,67 @@ description: Public-safe Pencil execution skill for creators using official Penc
 ## Core Rules
 
 1. Keep the official dependency external.
-2. Handshake first, then work.
-3. Read structure before editing.
-4. Batch when possible, do not fragment edits.
-5. Locked pages get only surgical changes.
-6. Always verify with a screenshot or equivalent review step.
-7. Public repos ship method, templates, and checks, not the whole moat.
-8. Never commit tokens, local paths, machine-specific state, or private screenshots.
-9. Third-party tools and assets must follow their own licenses.
-10. When references matter, use `takeaway-skill` first instead of guessing strategy inside the execution layer.
+2. Choose the mode first: `Pencil MCP` or `Open Pencil Web 2.0`.
+3. In Pencil MCP mode, handshake first, then work.
+4. In Web 2.0 mode, verify the static HTML opens locally before editing behavior.
+5. Read structure before editing.
+6. Batch when possible, do not fragment edits.
+7. Locked pages get only surgical changes.
+8. Always verify with a screenshot or equivalent review step.
+9. Public repos ship method, templates, and checks, not the whole moat.
+10. Never commit tokens, local paths, machine-specific state, or private screenshots.
+11. Third-party tools and assets must follow their own licenses.
+12. When references matter, use `takeaway-skill` first instead of guessing strategy inside the execution layer.
 
 ## Default Workflow
+
+### 0. Choose the mode
+
+- Use `Pencil MCP` mode when the task is inside official Pencil, `.pen` files, or Pencil MCP tooling.
+- Use `Open Pencil Web 2.0` mode when the user wants a free browser-based editor, HTML landing page tweaking, or a Windows-friendly public path.
+- If the user only wants a public starter that ordinary people can open, prefer Web 2.0.
+
+## Open Pencil Web 2.0 Workflow
+
+### 1. Verify the static editor
+
+- Open `web/index.html` directly, or serve the repo with a small static server.
+- The editor must work under both:
+  - `file://` through `default-design.js`
+  - `http://localhost/...` through `design.json`
+- If `fetch()` fails under `file://`, do not treat it as a bug if the embedded default design still loads.
+
+### 2. Use the compact right-side editor
+
+Expected public controls:
+
+- top commands: undo, redo, copy, delete, export
+- tools: select, text, frame, pill
+- transform: x, y, width, height, rotate, nudge
+- align: icon-first alignment controls
+- style: font size, text color, fill, radius, lock
+- panel states: `Hide`, bubble reopen, `Done` confirmation
+
+### 3. Keep the public 2.0 feature set small
+
+The free public editor should focus on:
+
+- moving and resizing elements
+- editing text
+- changing common styles
+- exporting a final HTML snapshot
+- leaving a clear note that Codex can reopen edit mode later
+
+Do not turn public 2.0 into the full internal product. Advanced component systems, private style packs, benchmark packs, and commercial automation can remain outside the free layer.
+
+### 4. Verify before reporting
+
+- Run a syntax check for changed JavaScript.
+- Validate JSON if `design.json` changes.
+- Preview the editor in a browser or static server when possible.
+- Confirm the final page can enter `Done` mode without leaving editor UI visible.
+
+## Pencil MCP Workflow
 
 ### 1. Verify the official dependency
 
@@ -143,7 +198,7 @@ Allowed public outputs usually include:
 
 - workflow docs
 - templates
-- public-safe demo files
+- public-safe starter files
 - neutral screenshots
 - landing pages
 
@@ -176,7 +231,7 @@ Move the task back to the appropriate upstream design, product, or implementatio
 - workflow
 - templates
 - docs
-- public-safe demos
+- public-safe starter templates
 - release checks
 
 ### Private layer

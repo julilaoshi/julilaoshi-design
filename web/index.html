@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Pencil Web 2.0</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main id="designApp" class="design-app">
+      <section class="stage-wrap" aria-label="Open Pencil Web canvas">
+        <div class="canvas-desk">
+          <div class="canvas-frame">
+            <div id="canvas" class="canvas" role="application" aria-label="Editable design canvas"></div>
+          </div>
+        </div>
+        <p id="finalHint" class="final-hint">Need changes later? Ask Codex to reopen Open Pencil Web edit mode.</p>
+      </section>
+
+      <aside id="editorPanel" class="editor-panel" aria-label="Design tools">
+        <div class="panel-top">
+          <div>
+            <p class="kicker">Open Pencil Web</p>
+            <h1>2.0 Editor</h1>
+          </div>
+          <div class="panel-actions">
+            <button id="hidePanelBtn" class="soft-tool" type="button">Hide</button>
+            <button id="finishBtn" class="finish-btn" type="button">Done</button>
+          </div>
+        </div>
+
+        <section class="tool-section compact-section">
+          <div class="section-title">
+            <h2>Commands</h2>
+            <span id="statusText" class="status-text">Pick an object.</span>
+          </div>
+          <div class="command-row">
+            <button id="undoBtn" class="icon-btn" type="button" title="Undo" aria-label="Undo">↶</button>
+            <button id="redoBtn" class="icon-btn" type="button" title="Redo" aria-label="Redo">↷</button>
+            <span class="row-spacer"></span>
+            <button id="duplicateBtn" class="icon-btn" type="button" title="Copy" aria-label="Copy">⧉</button>
+            <button id="deleteBtn" class="text-command danger-icon" type="button" title="Delete" aria-label="Delete">Delete</button>
+            <button id="exportBtn" class="text-command" type="button" title="Export" aria-label="Export">Export</button>
+          </div>
+          <div class="tool-dock" aria-label="Tools">
+            <button id="selectToolBtn" class="tool-icon is-active" type="button" title="Select" aria-label="Select">↖</button>
+            <button data-create="text" class="tool-icon" type="button" title="Text" aria-label="Text">T</button>
+            <button data-create="shape" class="tool-icon" type="button" title="Frame" aria-label="Frame">□</button>
+            <button data-create="pill" class="tool-icon" type="button" title="Pill" aria-label="Pill">▭</button>
+          </div>
+        </section>
+
+        <section class="tool-section">
+          <h2>Selection</h2>
+          <label class="field">
+            <span>Layer</span>
+            <input id="selectedName" type="text" value="None" disabled />
+          </label>
+          <label class="field">
+            <span>Text</span>
+            <textarea id="textInput" rows="3" disabled></textarea>
+          </label>
+        </section>
+
+        <section class="tool-section">
+          <div class="section-title">
+            <h2>Transform</h2>
+            <label class="zoom-control">
+              <span>Zoom</span>
+              <input id="zoomInput" type="range" min="55" max="120" value="92" />
+            </label>
+          </div>
+          <div class="grid-four">
+            <label class="field">
+              <span>X</span>
+              <input id="xInput" type="number" disabled />
+            </label>
+            <label class="field">
+              <span>Y</span>
+              <input id="yInput" type="number" disabled />
+            </label>
+            <label class="field">
+              <span>W</span>
+              <input id="wInput" type="number" disabled />
+            </label>
+            <label class="field">
+              <span>H</span>
+              <input id="hInput" type="number" disabled />
+            </label>
+          </div>
+          <label class="field">
+            <span>Rotate</span>
+            <input id="rotationInput" type="number" min="-180" max="180" step="1" disabled />
+          </label>
+          <div class="nudge-pad" aria-label="Nudge selected object">
+            <button data-action="up" title="Move up">↑</button>
+            <button data-action="left" title="Move left">←</button>
+            <button data-action="right" title="Move right">→</button>
+            <button data-action="down" title="Move down">↓</button>
+          </div>
+        </section>
+
+        <section class="tool-section">
+          <h2>Align</h2>
+          <div class="button-grid">
+            <button data-align="left" type="button" title="Align left" aria-label="Align left">|←</button>
+            <button data-align="center" type="button" title="Align center" aria-label="Align center">↔</button>
+            <button data-align="right" type="button" title="Align right" aria-label="Align right">→|</button>
+            <button data-align="top" type="button" title="Align top" aria-label="Align top">⊤</button>
+            <button data-align="middle" type="button" title="Align middle" aria-label="Align middle">↕</button>
+            <button data-align="bottom" type="button" title="Align bottom" aria-label="Align bottom">⊥</button>
+            <button id="frontBtn" type="button" title="Bring forward" aria-label="Bring forward">↑</button>
+            <button id="backBtn" type="button" title="Send backward" aria-label="Send backward">↓</button>
+          </div>
+        </section>
+
+        <section class="tool-section">
+          <h2>Style</h2>
+          <div class="grid-two">
+            <label class="field">
+              <span>Size</span>
+              <input id="fontInput" type="number" min="10" max="120" disabled />
+            </label>
+            <label class="field">
+              <span>Text</span>
+              <input id="colorInput" type="color" disabled />
+            </label>
+          </div>
+          <div class="grid-two">
+            <label class="field">
+              <span>Fill</span>
+              <input id="fillInput" type="color" disabled />
+            </label>
+            <label class="field">
+              <span>Radius</span>
+              <input id="radiusInput" type="number" min="0" max="80" disabled />
+            </label>
+          </div>
+          <label class="lock-row">
+            <input id="lockInput" type="checkbox" disabled />
+            <span>Lock selected layer</span>
+          </label>
+        </section>
+
+        <section class="tool-section finish-section">
+          <h2>Publish</h2>
+          <p>Finish removes the editor and leaves the final page only. Codex can reopen edit mode later.</p>
+        </section>
+
+        <details class="json-box">
+          <summary>Object JSON</summary>
+          <pre id="jsonPreview" class="json-preview" aria-label="Selected object JSON"></pre>
+        </details>
+      </aside>
+
+      <button id="panelBubble" class="panel-bubble" type="button" aria-label="Open editor">Edit</button>
+
+      <div id="confirmOverlay" class="confirm-overlay" role="dialog" aria-modal="true" aria-labelledby="confirmTitle" hidden>
+        <div class="confirm-card">
+          <p class="kicker">Finish</p>
+          <h2 id="confirmTitle">Finish this page?</h2>
+          <p>The editor, bubble, and build controls will disappear. The page will switch to its final viewing state.</p>
+          <label class="confirm-check">
+            <input id="confirmCheck" type="checkbox" />
+            <span>I confirm this page is ready.</span>
+          </label>
+          <div class="confirm-actions">
+            <button id="cancelFinishBtn" type="button">Cancel</button>
+            <button id="confirmFinishBtn" class="finish-btn" type="button" disabled>Finish</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./default-design.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

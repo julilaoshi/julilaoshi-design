@@ -3,13 +3,13 @@
 ## 1. README First Screen
 
 - [ ] 第一屏是否有明确钩子，而不是直接写说明书
-- [ ] 是否有视频、截图或 demo 入口
+- [ ] 是否有 Web 2.0 编辑器入口
 - [ ] CTA 是否清楚
 - [ ] 中英文分工是否合理
 - [ ] 默认 GitHub 首页 `README.md` 是否是目标默认语言
 - [ ] 是否存在语言切换行，且链接真实可点
 - [ ] 是否明确 public 版本与 internal workflow 的差别
-- [ ] `Load / How To Load` 是否在首屏靠前，并位于视频演示之前
+- [ ] `Load / How To Load` 是否在首屏靠前，并且 Web 2.0 入口清楚
 - [ ] 是否对比过线上已发布页面，不只看本地草稿
 
 ## 2. Pencil Boundary
@@ -20,6 +20,15 @@
 - [ ] 是否保留官方 Terms / EULA 链接
 - [ ] 是否避免让用户误以为这是 Pencil 官方仓库
 - [ ] 是否说明 Open Pencil 是公开执行层，不是完整内部自动设计系统
+
+## 2.5 Open Pencil Web 2.0
+
+- [ ] 是否有 `web/index.html`
+- [ ] 是否能通过 `file://` 打开默认设计
+- [ ] 是否能通过本地静态服务器读取 `web/design.json`
+- [ ] 是否有 Hide / Edit bubble / Done 确认
+- [ ] 是否能拖拽、四角缩放、旋转、复制、删除和导出
+- [ ] 是否明确 public Web 2.0 是免费轻量层，不是内部完整版或 3.0 商业层
 
 ## 3. Privacy
 
@@ -45,6 +54,7 @@
 - [ ] 是否有 `agents/openai.yaml`
 - [ ] `skill/SKILL.md` 是否只写工作流，不写成 README
 - [ ] `agents/openai.yaml` 是否与 Open Pencil 名称和用途一致
+- [ ] `skill/SKILL.md` 是否区分 Pencil MCP mode 与 Web 2.0 mode
 - [ ] 安装说明是否提醒用户先安装官方 Pencil
 - [ ] 安装说明是否提醒安装后重启 Codex 或对应 coding agent
 

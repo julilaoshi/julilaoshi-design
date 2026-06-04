@@ -13,10 +13,24 @@
 </p>
 
 <p align="center">
-  当前公开的是 <code>v1.0</code>。我社交媒体里展示的版本，更接近“Open Pencil + takeaway + 本地化依赖 + 其他联动 skill”一起工作的内部流程。
+  当前公开的是 <code>v2.0</code>：一条继续兼容官方 Pencil 的 Skill 工作流，一条给普通用户直接打开的免费 Web 微调器。
 </p>
 
 [English](./README.md) | 简体中文
+
+## Open Pencil Web 2.0
+
+Open Pencil 现在新增了一条 public Web 2.0 路线，给不想先安装官方 Pencil 的普通用户使用。
+
+免费静态编辑器入口：
+
+- 打开 [`web/index.html`](./web/index.html)
+- 可以拖拽、缩放、旋转、复制、删除、对齐和编辑简单图层
+- 可以隐藏右侧编辑器来预览页面
+- 点击 `Done` 后，编辑界面会消失，只保留最终页面
+- 可以导出独立 HTML 快照
+
+这条路线故意做小：公开版先解决“免费、好打开、能微调、能导出”的问题，不提前公开内部版的高级自动化、私有风格包、benchmark、案例库和未来 3.0 可能商业化的功能。
 
 ## 如何载入和使用
 
@@ -120,8 +134,9 @@ cd open-pencil
 
 也就是说：
 
-- 公开版 `v1.0` 是真的能用
-- 但它不是“脱离环境、脱离依赖、脱离上游 skill 还百分百还原我演示效果”的魔法包
+- 公开版 `v1.0` 的 Pencil 兼容工作流是真的能用
+- 公开版 `v2.0` 的 Web 编辑器是免费、浏览器优先的轻量路线
+- 但它不是“脱离环境、脱离依赖、脱离上游 skill 还百分百还原我公开视频效果”的魔法包
 
 ## 它真正帮你做到什么
 
@@ -129,27 +144,19 @@ cd open-pencil
 - 可以在任何中间环节半自动修改设计，修改文字、修改图片、添加新元素，边做边接管
 - 先做握手测试，再读画布，再批量改动，再截图复核
 - 当页面已经手工调过时，自动切到“锁版点修”思路
-- 把 `Pencil` 工作流整理成一个更好复用、更好演示、更好开源的公开层
-- 配合 `takeaway-skill` 和参考数据后，更容易做出接近我自媒体里那种“看起来像半自动设计”的效果
-
-## 项目演示
-
-<p align="center">
-  <a href="https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7">
-    <img src="https://img.youtube.com/vi/jLFZp3jxT_g/maxresdefault.jpg" alt="观看 Open Pencil 项目演示" width="76%" />
-  </a>
-</p>
+- 把 `Pencil` 工作流整理成一个更好复用、更好开源的公开层
+- 配合 `takeaway-skill` 和参考数据后，更容易做出接近我公开视频里那种“看起来像半自动设计”的效果
 
 ## 快速开始
 
 - [阅读公开版 Skill 文件](./skill/SKILL.md)
 - [看中文版说明](./README.zh-CN.md)
 - [看英文版说明](./README.md)
-- [观看视频讲解](https://youtu.be/jLFZp3jxT_g?si=qElnCYXS7Pg0Xfb7)
+- [打开 Web 2.0 编辑器](./web/index.html)
 
 ## 这个仓库为什么存在
 
-很多人看到我演示时，会以为：
+很多人看到我公开视频时，会以为：
 
 - 只要装一个 skill
 - 随便一句话
@@ -171,7 +178,7 @@ cd open-pencil
 - 一个给官方 `Pencil` 用户使用的工作流仓
 - 一套握手、读画布、批量改动、锁版点修、截图复核的方法
 - 一组公开边界和依赖边界说明
-- 当前公开的是 `v1.0`
+- 当前公开的是 `v2.0`，包含轻量 Web 编辑器
 
 ## 这个仓库不包含什么
 
@@ -201,9 +208,9 @@ cd open-pencil
 
 另外，我内部版已经积累了更多参考数据、蒸馏卡、中间资产和练过很多轮的工作流。
 
-所以你在自媒体里看到的版本更强，不是因为这个 public 仓写少了，而是因为我演示时本来就不是只靠一个 public skill 在工作。
+所以你在自媒体里看到的版本更强，不是因为这个 public 仓写少了，而是因为我的公开视频本来就不是只靠一个 public skill 在工作。
 
-如果你想更接近我演示里的效果，一般至少要满足 3 件事：
+如果你想更接近我公开视频里的效果，一般至少要满足 3 件事：
 
 1. 有 `takeaway-skill`
 2. 有够用的参考数据
@@ -213,7 +220,7 @@ cd open-pencil
 
 这个仓库默认不是“只看一个 skill 文件就结束”。
 
-标准使用流是：
+Pencil 兼容路线的标准使用流是：
 
 1. 先装好官方 `Pencil`
 2. 用 `takeaway-skill` 判断参考里什么值得拿
@@ -227,10 +234,18 @@ cd open-pencil
 - `Open Pencil` 管执行
 - 参考数据决定你能走多远
 
+Web 2.0 路线更简单：
+
+1. 打开 `web/index.html`
+2. 让 Codex 帮你改页面，或者自己用右侧编辑器微调
+3. 预览时可以先隐藏面板
+4. 页面确认完成后再点 `Done`
+5. 最后导出 HTML 快照
+
 ## 目录结构
 
 - `skill/SKILL.md`：公开版 Pencil skill
-- `demo/`：公开安全假案例和可复制 prompt
+- `web/`：公开版 Open Pencil Web 2.0 静态编辑器
 - `references/`：依赖边界与公开边界说明
 - `agents/openai.yaml`：skill 的 UI 元数据
 - `site/index.html`：展示页
@@ -245,7 +260,7 @@ cd open-pencil
 ## 语言策略
 
 - 文档提供英文版和中文版
-- 中文版会更直接把 `v1.0` 的边界讲清楚
+- 中文版会更直接把 public 免费层的边界讲清楚
 - 英文版更适合给 GitHub 公共访客快速理解
 
 ## License 与品牌边界

@@ -6,7 +6,7 @@ Public Open Pencil workflow layer for agent-assisted Pencil design: handshake, c
 
 ## Website
 
-Use the video walkthrough or public demo link if available.
+Use the Web 2.0 editor link if available.
 
 ## Topics
 
@@ -23,4 +23,4 @@ open-source
 
 ## Boundary Note
 
-This repository is a public workflow layer. It does not include the official Pencil app, official MCP packages, activation state, private prompt chains, private case libraries, or the stronger internal workflow shown in social media demos.
+This repository is a public workflow layer. It does not include the official Pencil app, official MCP packages, activation state, private prompt chains, private case libraries, or the stronger internal workflow shown in public videos.
