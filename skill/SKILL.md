@@ -1,14 +1,14 @@
 ---
-name: open-pencil
-description: Public-safe Open Pencil workflow for official Pencil MCP execution and the free browser-first Open Pencil Web 2.0 editor. Use when a task needs Pencil handshake/canvas edits, .pen execution, screenshot review, or lightweight HTML design-to-web tweaking without redistributing official Pencil or leaking private assets.
+name: julilaoshi-design
+description: Public-safe julilaoshi-design workflow for official Pencil MCP execution and the free browser-first julilaoshi-design Web 2.0 editor. Use when a task needs Pencil handshake/canvas edits, .pen execution, screenshot review, or lightweight HTML design-to-web tweaking without redistributing official Pencil or leaking private assets.
 ---
 
-# Open Pencil
+# julilaoshi-design
 
 ## Overview
 
 - This is a public-safe execution skill for official Pencil users.
-- It also includes Open Pencil Web 2.0, a small free static HTML editor for browser-first visual tweaking.
+- It also includes julilaoshi-design Web 2.0, a small free static HTML editor for browser-first visual tweaking.
 - It is unofficial and does not grant redistribution rights for Pencil.
 - Pencil MCP mode assumes every user installs Pencil from the official source on their own machine.
 - Web 2.0 mode does not require official Pencil, npm installs, or a build step.
@@ -18,7 +18,7 @@ description: Public-safe Open Pencil workflow for official Pencil MCP execution 
 ## Use This Skill When
 
 - the user says `Pencil`, `.pen`, `Pencil MCP`, `screenshot review`, or `continue in Pencil`
-- the user says `Open Pencil Web`, `Web 2.0`, `HTML editor`, `design-to-HTML`, or asks for browser-based visual tweaking
+- the user says `julilaoshi-design Web`, `Web 2.0`, `HTML editor`, `design-to-HTML`, or asks for browser-based visual tweaking
 - a task has already entered `.pen` editing, canvas changes, or Pencil MCP execution
 - a task needs a lightweight public HTML editor with right-side controls, drag/resize/rotate, and export
 - you need public-safe handshake, canvas reads, batch edits, screenshot review, or lock-safe patches
@@ -29,7 +29,7 @@ description: Public-safe Open Pencil workflow for official Pencil MCP execution 
 - deciding the whole page concept, page skeleton, or product architecture
 - deciding what a reference is worth taking without upstream distillation
 - bundling or redistributing official Pencil
-- promising the Web 2.0 editor is a full Figma, Illustrator, or internal Open Pencil replacement
+- promising the Web 2.0 editor is a full Figma, Illustrator, or internal julilaoshi-design replacement
 - shipping activation files, tokens, or account state
 - leaking internal benchmark packs or private case libraries
 - redistributing third-party paid tools without clear permission
@@ -38,7 +38,7 @@ description: Public-safe Open Pencil workflow for official Pencil MCP execution 
 ## Core Rules
 
 1. Keep the official dependency external.
-2. Choose the mode first: `Pencil MCP` or `Open Pencil Web 2.0`.
+2. Choose the mode first: `Pencil MCP` or `julilaoshi-design Web 2.0`.
 3. If the user has not clearly chosen a mode, ask the mode question before editing anything.
 4. Reply in the user's language unless they ask otherwise.
 5. In Pencil MCP mode, handshake first, then work.
@@ -57,7 +57,7 @@ description: Public-safe Open Pencil workflow for official Pencil MCP execution 
 ### 0. Choose the mode
 
 - Use `Pencil MCP` mode when the task is inside official Pencil, `.pen` files, or Pencil MCP tooling.
-- Use `Open Pencil Web 2.0` mode when the user wants a free browser-based editor, HTML landing page tweaking, or a Windows-friendly public path.
+- Use `julilaoshi-design Web 2.0` mode when the user wants a free browser-based editor, HTML landing page tweaking, or a Windows-friendly public path.
 - If the user only wants a public starter that ordinary people can open, prefer Web 2.0.
 - If no mode has been chosen, ask exactly one short mode question and wait:
 
@@ -86,7 +86,7 @@ B. Web Editor 模式
 - Do not run a Pencil MCP handshake before the user chooses `A`.
 - Do not open or edit `web/index.html` before the user chooses `B`, unless the user has already clearly asked for the Web editor.
 
-## Open Pencil Web 2.0 Workflow
+## julilaoshi-design Web 2.0 Workflow
 
 ### 1. Verify the static editor
 
@@ -286,7 +286,7 @@ When reporting work, include:
 
 ```text
 Read skill/SKILL.md first.
-Use Open Pencil 2.0.
+Use julilaoshi-design.
 
 Before editing anything, ask me to choose:
 A. Pencil MCP Mode

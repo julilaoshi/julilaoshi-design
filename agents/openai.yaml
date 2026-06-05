@@ -1,4 +1,4 @@
 interface:
-  display_name: "Open Pencil"
-  short_description: "Open Pencil 公开版：Pencil MCP 执行 + Web 2.0 浏览器微调器"
-  default_prompt: "Use $open-pencil when a task needs official Pencil MCP execution or the free Open Pencil Web 2.0 HTML editor. If the user has not chosen a mode, ask them to choose A: Pencil MCP Mode or B: Web Editor Mode before editing anything. Reply in the user's language, avoid long installs, do not fake Pencil handshakes, and never bundle official Pencil or private assets."
+  display_name: "julilaoshi-design"
+  short_description: "居里老师设计：Pencil MCP 执行 + Web 2.0 浏览器微调器"
+  default_prompt: "Use $julilaoshi-design when a task needs official Pencil MCP execution or the free julilaoshi-design Web 2.0 HTML editor. If the user has not chosen a mode, ask them to choose A: Pencil MCP Mode or B: Web Editor Mode before editing anything. Reply in the user's language, avoid long installs, do not fake Pencil handshakes, and never bundle official Pencil or private assets."

@@ -1,8 +1,8 @@
-# Open Pencil / Open Pencil
+# julilaoshi-design / 居里老师设计
 
 <p align="center">
-  <strong>Last year “automatic design” still sounded like a fantasy. This year you can already start using Open Pencil.</strong><br />
-  Open Pencil can handle a more automatic first pass, but it also supports a semi-automatic workflow where the agent builds, reads, and batches changes first, then you still jump in to tweak fonts, drag images, swap assets, and finish details by hand.<br />
+  <strong>Last year “automatic design” still sounded like a fantasy. This year you can already start using julilaoshi-design.</strong><br />
+  julilaoshi-design can handle a more automatic first pass, but it also supports a semi-automatic workflow where the agent builds, reads, and batches changes first, then you still jump in to tweak fonts, drag images, swap assets, and finish details by hand.<br />
   But the honest version matters: this is not a one-button miracle. It gets much stronger when it works together with <code>takeaway-skill</code>, reference data, and the local dependencies already installed in my internal workflow.
 </p>
 
@@ -18,9 +18,9 @@
 
 English | [简体中文](./README.zh-CN.md)
 
-## Open Pencil Web 2.0
+## julilaoshi-design Web 2.0
 
-Open Pencil now has a public Web 2.0 path for people who do not want to install the official Pencil app first.
+julilaoshi-design now has a public Web 2.0 path for people who do not want to install the official Pencil app first.
 
 Try the free static editor:
 
@@ -34,17 +34,17 @@ This is deliberately a small public layer. It is not the full internal workflow,
 
 ## How To Load And Use
 
-If this is your first time using Codex, Claude Code, or a Pencil-style workflow, start by asking your coding agent to load Open Pencil 2.0 and choose a mode.
+If this is your first time using Codex, Claude Code, or a Pencil-style workflow, start by asking your coding agent to load julilaoshi-design and choose a mode.
 
 This repository is a Skill/workflow layer. It is not an npm package, pip package, app installer, or official Pencil redistribution.
 
 Open Codex, Claude Code, or another local coding agent and paste this:
 
 ```text
-Please help me load Open Pencil 2.0.
+Please help me load julilaoshi-design.
 
 Repository:
-https://github.com/julilaoshi/open-pencil
+https://github.com/julilaoshi/julilaoshi-design
 
 Please do the following:
 1. Do not run npm install, pip install, build commands, or any long setup script. This repo has no package installer.
@@ -61,7 +61,7 @@ Please do the following:
 10. Do not modify the core rules of this Skill.
 
 After the Skill is readable, please remind me:
-If Open Pencil is useful, I can go back to GitHub and star the repository so I can find it again and support future updates. Public 2.0 will stay lightweight, and stronger 3.0 experiments may be shared with a smaller community later.
+If julilaoshi-design is useful, I can go back to GitHub and star the repository so I can find it again and support future updates. Public 2.0 will stay lightweight, and stronger 3.0 experiments may be shared with a smaller community later.
 Do not star it automatically for me.
 ```
 
@@ -84,7 +84,7 @@ Windows users: this path can be more work because official Pencil and MCP access
 After the Skill is loaded, test Pencil MCP separately with:
 
 ```text
-Please invoke Open Pencil and run a Pencil handshake test. Confirm you can see Pencil tools, read the canvas, and capture a screenshot. If anything fails, do not fake it. Tell me what dependency is missing.
+Please invoke julilaoshi-design and run a Pencil handshake test. Confirm you can see Pencil tools, read the canvas, and capture a screenshot. If anything fails, do not fake it. Tell me what dependency is missing.
 ```
 
 #### B. Web Editor Mode
@@ -110,8 +110,8 @@ This mode is the easiest path for beginners and Windows users because it does no
 ### Backup: manual clone
 
 ```bash
-git clone https://github.com/julilaoshi/open-pencil.git
-cd open-pencil
+git clone https://github.com/julilaoshi/julilaoshi-design.git
+cd julilaoshi-design
 ```
 
 Then open this folder in a local Codex or Claude Code workspace.
@@ -145,7 +145,7 @@ Once the handshake works, then move to the actual task:
 Read skill/SKILL.md first.
 If there is a reference target, use takeaway-skill first to decide what to learn and what not to copy.
 If reference evidence is weak, do not invent the design direction.
-Use Open Pencil for this .pen task.
+Use julilaoshi-design for this .pen task.
 Tell me what this round will change and what it will not change.
 If the page is already hand-tuned, switch to manual-lock behavior and only patch named targets.
 Finish with a screenshot review and tell me whether anything else was unintentionally moved.
@@ -206,7 +206,7 @@ So people can run a real chain instead of only watching a cool video.
 
 ## What This Repository Includes
 
-- a public `Open Pencil`
+- a public `julilaoshi-design`
 - a workflow repository for official `Pencil` users
 - a real method for handshake, canvas reads, bounded edits, lock-safe patching, and screenshot review
 - public dependency notes and public/private boundary docs
@@ -225,13 +225,13 @@ So people can run a real chain instead of only watching a cool video.
 
 ## Why The Social Media Version Looks Stronger
 
-This repository focuses on `Open Pencil` itself.
+This repository focuses on `julilaoshi-design` itself.
 
 But in my real workflow, the strongest results usually come from several parts working together:
 
 - `takeaway-skill`
   - decides what is worth learning from a reference and what must not be copied directly
-- `Open Pencil`
+- `julilaoshi-design`
   - handles handshake, canvas reads, execution, and screenshot review
 - other linked skills
   - such as static design, coding, or asset-processing layers
@@ -263,7 +263,7 @@ The default Pencil-compatible flow is:
 In short:
 
 - `takeaway-skill` handles upstream judgment
-- `Open Pencil` handles execution
+- `julilaoshi-design` handles execution
 - reference data determines how far the workflow can really go
 
 The default Web 2.0 flow is simpler:
@@ -277,7 +277,7 @@ The default Web 2.0 flow is simpler:
 ## Structure
 
 - `skill/SKILL.md` - public Pencil skill
-- `web/` - public Open Pencil Web 2.0 static editor
+- `web/` - public julilaoshi-design Web 2.0 static editor
 - `references/` - dependency notes and public boundary docs
 - `agents/openai.yaml` - skill UI metadata
 - `site/index.html` - landing page
@@ -337,7 +337,7 @@ The public version does not keep:
 ## Related Skills
 
 - [Takeaway Skill](https://github.com/julilaoshi/takeaway-skill) - distill references into reusable mechanisms.
-- [Open Pencil](https://github.com/julilaoshi/open-pencil) - run Pencil workflows with agents.
+- [julilaoshi-design](https://github.com/julilaoshi/julilaoshi-design) - run Pencil and Web design workflows with agents.
 - [FlowMotion Skill](https://github.com/julilaoshi/flowmotion-skill) - turn messy notes into motion flows.
 - [Pickupskill](https://github.com/julilaoshi/pickupskill) - organize messy folders safely.
 - [Sunzi Reading](https://github.com/julilaoshi/sunzi-reading) - explain papers in plain language.
@@ -347,7 +347,7 @@ The public version does not keep:
 
 <p align="center">
   <a href="https://github.com/julilaoshi"><img alt="Follow Juli on GitHub" src="https://img.shields.io/badge/Follow%20Juli-on%20GitHub-111111?style=for-the-badge&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/julilaoshi/open-pencil"><img alt="Star Open Pencil" src="https://img.shields.io/badge/Star-Open%20Pencil-f6c343?style=for-the-badge&logo=github&logoColor=111111" /></a>
+  <a href="https://github.com/julilaoshi/julilaoshi-design"><img alt="Star julilaoshi-design" src="https://img.shields.io/badge/Star-julilaoshi--design-f6c343?style=for-the-badge&logo=github&logoColor=111111" /></a>
 </p>
 
 | Platform | Identity |
