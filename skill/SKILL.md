@@ -60,17 +60,17 @@ Do not tell users that this skill requires an existing design draft before work 
 
 Do not summarize the skill as "not a direct design tool" in a way that discourages use. Use this clearer framing instead:
 
-- `Pencil MCP Mode` can start from a blank `.pen` file, then use official Pencil + MCP to build or edit the design, and finally export JPG / PNG from Pencil.
+- `Pencil MCP Mode` can start from a blank `.pen` file, then use official Pencil + MCP to build or edit the design, and finally export from Pencil.
 - `Web Editor Mode` needs no app install and no `.pen` file. It runs in the browser and exports HTML.
 
 Chinese wording:
 
-- `Pencil MCP 模式` 可以从空白 `.pen` 文件开始，通过官方 Pencil + MCP 搭建或编辑设计，最后在 Pencil 里导出 JPG / PNG。
+- `Pencil MCP 模式` 可以从空白 `.pen` 文件开始，通过官方 Pencil + MCP 搭建或编辑设计，最后在 Pencil 里导出。
 - `Web Editor 模式` 不需要安装 App，也不需要 `.pen` 文件，直接在浏览器里编辑并导出 HTML。
 
 If the user asks whether to install Pencil or optimize an image first, answer by mode:
 
-- Choose `A` if they want a `.pen` workflow and JPG / PNG export through Pencil.
+- Choose `A` if they want a `.pen` workflow and export through Pencil.
 - Choose `B` if they want the easiest browser path without installing Pencil.
 
 ### 0. Choose the mode
@@ -84,7 +84,7 @@ If the user asks whether to install Pencil or optimize an image first, answer by
 Which mode do you want to use?
 
 A. Pencil MCP Mode
-Use official Pencil + MCP. Best if you already installed Pencil, can create a blank .pen file, and want to export JPG / PNG from Pencil.
+Use official Pencil + MCP. Best if you already installed Pencil, can create a blank .pen file, and want to export from Pencil.
 
 B. Web Editor Mode
 Use the free browser editor. No app install and no .pen file required. Best for Windows users, beginners, or HTML export.
@@ -96,7 +96,7 @@ Chinese version when the user is writing in Chinese:
 你想使用哪种模式？
 
 A. Pencil MCP 模式
-使用官方 Pencil + MCP。适合已经安装 Pencil、可以新建空白 .pen 文件、最后想从 Pencil 导出 JPG / PNG 的用户。
+使用官方 Pencil + MCP。适合已经安装 Pencil、可以新建空白 .pen 文件、最后想从 Pencil 导出的用户。
 
 B. Web Editor 模式
 使用免费的浏览器编辑器。无需安装 App，无需 .pen 文件。适合 Windows 用户、初学者，或想导出 HTML 的用户。
@@ -311,12 +311,12 @@ Read skill/SKILL.md first.
 Use julilaoshi-design.
 
 Before editing anything, ask me to choose:
-A. Pencil MCP Mode - create or open a .pen file, edit through official Pencil MCP, then export JPG / PNG from Pencil.
+A. Pencil MCP Mode - create or open a .pen file, edit through official Pencil MCP, then export from Pencil.
 B. Web Editor Mode - no app install and no .pen file; edit directly in the browser and export HTML.
 
 If I choose A, verify official Pencil and MCP tools first. If anything is missing, tell me what is missing and stop. Do not fake the handshake.
 
-If I choose A, do not say I must already have a design draft. Guide me to create a blank .pen file first if I do not already have one. Use Pencil MCP to build or edit the .pen canvas, then remind me to export JPG / PNG from official Pencil.
+If I choose A, do not say I must already have a design draft. Guide me to create a blank .pen file first if I do not already have one. Use Pencil MCP to build or edit the .pen canvas, then remind me to export from official Pencil.
 
 If I choose B, open or guide me to web/index.html, explain that no app install and no .pen file are required, then help me edit or export the page.
 

@@ -52,7 +52,7 @@ Please do the following:
 3. Read README.md and skill/SKILL.md first.
 4. Make skill/SKILL.md available as a readable Skill in this project or in my coding agent's skills directory.
 5. Before editing anything, ask me to choose one mode:
-   A. Pencil MCP Mode - I already have official Pencil installed. I will create a blank `.pen` file, let julilaoshi-design edit it through Pencil MCP, and export JPG / PNG from Pencil.
+   A. Pencil MCP Mode - I already have official Pencil installed. I will create a blank `.pen` file, let julilaoshi-design edit it through Pencil MCP, and export from Pencil.
    B. Web Editor Mode - I do not want to install an app or create a `.pen` file. I want to design directly in the browser and export HTML.
 6. If I choose A, check whether official Pencil and MCP tools are available. If they are missing, stop and tell me what to install. Do not fake the handshake.
 7. If I choose B, open or guide me to web/index.html, explain the right-side editor, and help me edit or export the page.
@@ -75,7 +75,7 @@ Important: this mode does not require an existing design draft. You can start fr
 
 1. Create a blank `.pen` file in official Pencil.
 2. Let julilaoshi-design read the canvas, edit objects, and adjust layout through Pencil MCP.
-3. Export JPG / PNG or other image formats from official Pencil.
+3. Export from official Pencil.
 
 This mode does not require an existing design draft. It can start from a blank `.pen` file.
 
