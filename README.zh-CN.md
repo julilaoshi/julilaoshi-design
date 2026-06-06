@@ -172,7 +172,7 @@ cd julilaoshi-design
 
 <p align="center">
   <a href="https://youtu.be/0nGAg-1Bb-4?si=CfFmyDOCMywUQ-In">
-    <img src="https://img.youtube.com/vi/0nGAg-1Bb-4/sddefault.jpg" alt="观看居里老师设计配套视频" width="76%" />
+    <img src="./assets/walkthrough-thumbnail.jpg" alt="观看居里老师设计配套视频" width="560" />
   </a>
 </p>
 
