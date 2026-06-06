@@ -174,7 +174,7 @@ In other words:
 
 <p align="center">
   <a href="https://youtu.be/0nGAg-1Bb-4?si=CfFmyDOCMywUQ-In">
-    <img src="https://img.youtube.com/vi/0nGAg-1Bb-4/maxresdefault.jpg" alt="Watch the julilaoshi-design walkthrough" width="76%" />
+    <img src="https://img.youtube.com/vi/0nGAg-1Bb-4/sddefault.jpg" alt="Watch the julilaoshi-design walkthrough" width="76%" />
   </a>
 </p>
 
