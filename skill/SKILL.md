@@ -54,6 +54,25 @@ description: Public-safe julilaoshi-design workflow for official Pencil MCP exec
 
 ## Default Workflow
 
+### Response Safety Rules
+
+Do not tell users that this skill requires an existing design draft before work can begin.
+
+Do not summarize the skill as "not a direct design tool" in a way that discourages use. Use this clearer framing instead:
+
+- `Pencil MCP Mode` can start from a blank `.pen` file, then use official Pencil + MCP to build or edit the design, and finally export JPG / PNG from Pencil.
+- `Web Editor Mode` needs no app install and no `.pen` file. It runs in the browser and exports HTML.
+
+Chinese wording:
+
+- `Pencil MCP 模式` 可以从空白 `.pen` 文件开始，通过官方 Pencil + MCP 搭建或编辑设计，最后在 Pencil 里导出 JPG / PNG。
+- `Web Editor 模式` 不需要安装 App，也不需要 `.pen` 文件，直接在浏览器里编辑并导出 HTML。
+
+If the user asks whether to install Pencil or optimize an image first, answer by mode:
+
+- Choose `A` if they want a `.pen` workflow and JPG / PNG export through Pencil.
+- Choose `B` if they want the easiest browser path without installing Pencil.
+
 ### 0. Choose the mode
 
 - Use `Pencil MCP` mode when the task is inside official Pencil, `.pen` files, or Pencil MCP tooling.
@@ -188,6 +207,9 @@ Before working, confirm the repo does not contain:
 
 ### 6. Choose the stage
 
+- `Blank Build`
+  - starting from a new empty `.pen` file
+  - create the first layout, text hierarchy, simple shapes, and placeholders through Pencil MCP
 - `Reference Build`
   - still learning from a reference and building the broad structure
 - `Layout Build`
@@ -289,12 +311,12 @@ Read skill/SKILL.md first.
 Use julilaoshi-design.
 
 Before editing anything, ask me to choose:
-A. Pencil MCP Mode
-B. Web Editor Mode
+A. Pencil MCP Mode - create or open a .pen file, edit through official Pencil MCP, then export JPG / PNG from Pencil.
+B. Web Editor Mode - no app install and no .pen file; edit directly in the browser and export HTML.
 
 If I choose A, verify official Pencil and MCP tools first. If anything is missing, tell me what is missing and stop. Do not fake the handshake.
 
-If I choose A, guide me to create a blank .pen file first if I do not already have one. Use Pencil MCP to edit the .pen canvas, then remind me to export JPG / PNG from official Pencil.
+If I choose A, do not say I must already have a design draft. Guide me to create a blank .pen file first if I do not already have one. Use Pencil MCP to build or edit the .pen canvas, then remind me to export JPG / PNG from official Pencil.
 
 If I choose B, open or guide me to web/index.html, explain that no app install and no .pen file are required, then help me edit or export the page.
 

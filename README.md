@@ -71,6 +71,8 @@ Do not star it automatically for me.
 
 Use this if you already have official Pencil installed and want to work through a `.pen` file. The recommended flow is:
 
+Important: this mode does not require an existing design draft. You can start from a blank `.pen` file.
+
 1. Create a blank `.pen` file in official Pencil.
 2. Let julilaoshi-design read the canvas, edit objects, and adjust layout through Pencil MCP.
 3. Export JPG / PNG or other image formats from official Pencil.
