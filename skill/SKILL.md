@@ -78,28 +78,39 @@ If the user asks whether to install Pencil or optimize an image first, answer by
 - Use `Pencil MCP` mode when the task is inside official Pencil, `.pen` files, or Pencil MCP tooling.
 - Use `julilaoshi-design Web 2.0` mode when the user wants a free browser-based editor, HTML landing page tweaking, or a Windows-friendly public path.
 - If the user only wants a public starter that ordinary people can open, prefer Web 2.0.
-- If no mode has been chosen, ask exactly one short mode question and wait:
+- If no mode has been chosen, ask exactly one short mode question and wait.
+- Do not use a Markdown table for the mode question. Tables often render badly in chat screenshots and make the workflow feel harder than it is.
+- The first response should frame this as a design workflow with two starting paths, not as a limitation or a warning.
+- The first response must make these points clear:
+  - A mode can start from a blank `.pen` file.
+  - A mode requires official Pencil and Pencil MCP access.
+  - B mode does not require an app install or a `.pen` file.
+  - B mode edits in the browser and exports HTML.
+
+Use this English mode question:
 
 ```text
-Which mode do you want to use?
+julilaoshi-design is ready.
+Which starting path do you want?
 
 A. Pencil MCP Mode
-Use official Pencil + MCP. Best if you already installed Pencil, can create a blank .pen file, and want to export from Pencil.
+Create or open a blank .pen file, then let julilaoshi-design edit it through official Pencil + MCP. Use this if official Pencil and MCP are available on your computer. Final export happens in Pencil.
 
 B. Web Editor Mode
-Use the free browser editor. No app install and no .pen file required. Best for Windows users, beginners, or HTML export.
+Use the free browser editor. No app install and no .pen file required. Best for Windows users, beginners, or anyone who wants to edit directly in a web page and export HTML.
 ```
 
-Chinese version when the user is writing in Chinese:
+Use this Chinese mode question when the user is writing in Chinese:
 
 ```text
-你想使用哪种模式？
+居里老师设计已载入。
+你想从哪条路线开始？
 
 A. Pencil MCP 模式
-使用官方 Pencil + MCP。适合已经安装 Pencil、可以新建空白 .pen 文件、最后想从 Pencil 导出的用户。
+先新建或打开一个空白 .pen 文件，再让居里老师设计通过官方 Pencil + MCP 编辑。适合电脑上已经能使用官方 Pencil 和 MCP 的用户。最后在 Pencil 里导出。
 
 B. Web Editor 模式
-使用免费的浏览器编辑器。无需安装 App，无需 .pen 文件。适合 Windows 用户、初学者，或想导出 HTML 的用户。
+使用免费的浏览器编辑器。无需安装 App，无需 .pen 文件。适合 Windows 用户、初学者，或想直接在网页里编辑并导出 HTML 的用户。
 ```
 
 - Do not run a Pencil MCP handshake before the user chooses `A`.
@@ -311,8 +322,8 @@ Read skill/SKILL.md first.
 Use julilaoshi-design.
 
 Before editing anything, ask me to choose:
-A. Pencil MCP Mode - create or open a .pen file, edit through official Pencil MCP, then export from Pencil.
-B. Web Editor Mode - no app install and no .pen file; edit directly in the browser and export HTML.
+A. Pencil MCP Mode - create or open a blank .pen file, edit through official Pencil MCP, then export from Pencil. This requires official Pencil and MCP access on my computer.
+B. Web Editor Mode - no app install and no .pen file; edit directly in the browser and export HTML. This is the easiest path for Windows users and beginners.
 
 If I choose A, verify official Pencil and MCP tools first. If anything is missing, tell me what is missing and stop. Do not fake the handshake.
 

@@ -51,9 +51,9 @@ Please do the following:
 2. Download or read the repository.
 3. Read README.md and skill/SKILL.md first.
 4. Make skill/SKILL.md available as a readable Skill in this project or in my coding agent's skills directory.
-5. Before editing anything, ask me to choose one mode:
-   A. Pencil MCP Mode - I already have official Pencil installed. I will create a blank `.pen` file, let julilaoshi-design edit it through Pencil MCP, and export from Pencil.
-   B. Web Editor Mode - I do not want to install an app or create a `.pen` file. I want to design directly in the browser and export HTML.
+5. Before editing anything, do not use a table. Ask me to choose one mode:
+   A. Pencil MCP Mode - I will create or open a blank `.pen` file, let julilaoshi-design edit it through official Pencil MCP, and export from Pencil. This mode requires official Pencil and MCP access on my computer.
+   B. Web Editor Mode - I do not want to install an app or create a `.pen` file. I want to design directly in the browser and export HTML. This mode is easier for Windows users and beginners.
 6. If I choose A, check whether official Pencil and MCP tools are available. If they are missing, stop and tell me what to install. Do not fake the handshake.
 7. If I choose B, open or guide me to web/index.html, explain the right-side editor, and help me edit or export the page.
 8. If this session cannot access my local desktop apps, local MCP tools, or local browser, say so and stop instead of retrying repeatedly.

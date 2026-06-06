@@ -51,9 +51,9 @@ https://github.com/julilaoshi/julilaoshi-design
 2. 下载或读取这个仓库。
 3. 先阅读 README.zh-CN.md 和 skill/SKILL.md。
 4. 把 skill/SKILL.md 作为当前项目或当前 coding agent 可读取的 Skill。
-5. 在开始编辑之前，先问我选择哪种模式：
-   A. Pencil MCP 模式：我已经安装官方 Pencil，准备新建一个空白 `.pen` 文件，让居里老师设计通过 Pencil MCP 编辑，最后在 Pencil 里导出。
-   B. Web Editor 模式：我不想安装 App，也不想创建 `.pen` 文件，想直接在浏览器网页里设计，并导出 HTML。
+5. 在开始编辑之前，不要用表格，直接问我选择哪种模式：
+   A. Pencil MCP 模式：我会新建或打开一个空白 `.pen` 文件，让居里老师设计通过官方 Pencil MCP 编辑，最后在 Pencil 里导出。这个模式要求我的电脑上能使用官方 Pencil 和 MCP。
+   B. Web Editor 模式：我不想安装 App，也不想创建 `.pen` 文件，想直接在浏览器网页里设计，并导出 HTML。这个模式更适合 Windows 用户和初学者。
 6. 如果我选 A，请检查官方 Pencil 和 MCP 工具是否可用。如果缺依赖，直接告诉我缺什么，不要假装握手成功。
 7. 如果我选 B，请打开或引导我打开 web/index.html，说明右侧编辑器怎么用，并帮我编辑或导出页面。
 8. 如果当前会话访问不到我的本地桌面应用、本地 MCP 工具或本地浏览器，直接说明并停止，不要反复尝试。
