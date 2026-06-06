@@ -170,6 +170,14 @@ In other words:
 - the public `v2.0` Web editor is free and browser-first
 - but it is not a magic package that reproduces my strongest public videos without environment, dependencies, or upstream skills
 
+## Watch The Walkthrough
+
+<p align="center">
+  <a href="https://youtu.be/0nGAg-1Bb-4?si=CfFmyDOCMywUQ-In">
+    <img src="https://img.youtube.com/vi/0nGAg-1Bb-4/maxresdefault.jpg" alt="Watch the julilaoshi-design walkthrough" width="76%" />
+  </a>
+</p>
+
 ## What This Actually Unlocks
 
 - start directing `Pencil` with an agent instead of only editing everything by hand

@@ -168,6 +168,14 @@ cd julilaoshi-design
 - 公开版 `v2.0` 的 Web 编辑器是免费、浏览器优先的轻量路线
 - 但它不是“脱离环境、脱离依赖、脱离上游 skill 还百分百还原我公开视频效果”的魔法包
 
+## 观看配套视频
+
+<p align="center">
+  <a href="https://youtu.be/0nGAg-1Bb-4?si=CfFmyDOCMywUQ-In">
+    <img src="https://img.youtube.com/vi/0nGAg-1Bb-4/maxresdefault.jpg" alt="观看居里老师设计配套视频" width="76%" />
+  </a>
+</p>
+
 ## 它真正帮你做到什么
 
 - 全自动用嘴语音输入做设计，不用手写复杂提示词也能直接做设计（建议语音输入）
