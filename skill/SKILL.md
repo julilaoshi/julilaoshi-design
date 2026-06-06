@@ -65,10 +65,10 @@ description: Public-safe julilaoshi-design workflow for official Pencil MCP exec
 Which mode do you want to use?
 
 A. Pencil MCP Mode
-Use official Pencil + MCP. Best if you already installed Pencil and want to edit .pen files.
+Use official Pencil + MCP. Best if you already installed Pencil, can create a blank .pen file, and want to export JPG / PNG from Pencil.
 
 B. Web Editor Mode
-Use the free browser editor. Best for Windows users, beginners, or HTML export.
+Use the free browser editor. No app install and no .pen file required. Best for Windows users, beginners, or HTML export.
 ```
 
 Chinese version when the user is writing in Chinese:
@@ -77,10 +77,10 @@ Chinese version when the user is writing in Chinese:
 你想使用哪种模式？
 
 A. Pencil MCP 模式
-使用官方 Pencil + MCP。适合已经安装 Pencil、想编辑 .pen 文件的用户。
+使用官方 Pencil + MCP。适合已经安装 Pencil、可以新建空白 .pen 文件、最后想从 Pencil 导出 JPG / PNG 的用户。
 
 B. Web Editor 模式
-使用免费的浏览器编辑器。适合 Windows 用户、初学者，或想导出 HTML 的用户。
+使用免费的浏览器编辑器。无需安装 App，无需 .pen 文件。适合 Windows 用户、初学者，或想导出 HTML 的用户。
 ```
 
 - Do not run a Pencil MCP handshake before the user chooses `A`.
@@ -294,7 +294,9 @@ B. Web Editor Mode
 
 If I choose A, verify official Pencil and MCP tools first. If anything is missing, tell me what is missing and stop. Do not fake the handshake.
 
-If I choose B, open or guide me to web/index.html, explain the right-side editor, and help me edit or export the page.
+If I choose A, guide me to create a blank .pen file first if I do not already have one. Use Pencil MCP to edit the .pen canvas, then remind me to export JPG / PNG from official Pencil.
+
+If I choose B, open or guide me to web/index.html, explain that no app install and no .pen file are required, then help me edit or export the page.
 
 Reply in my language.
 Do not run npm install, pip install, build commands, or long setup scripts.

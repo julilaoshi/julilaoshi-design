@@ -52,8 +52,8 @@ Please do the following:
 3. Read README.md and skill/SKILL.md first.
 4. Make skill/SKILL.md available as a readable Skill in this project or in my coding agent's skills directory.
 5. Before editing anything, ask me to choose one mode:
-   A. Pencil MCP Mode - I already have official Pencil installed and want to design through Pencil MCP.
-   B. Web Editor Mode - I want to design directly in the browser and export HTML.
+   A. Pencil MCP Mode - I already have official Pencil installed. I will create a blank `.pen` file, let julilaoshi-design edit it through Pencil MCP, and export JPG / PNG from Pencil.
+   B. Web Editor Mode - I do not want to install an app or create a `.pen` file. I want to design directly in the browser and export HTML.
 6. If I choose A, check whether official Pencil and MCP tools are available. If they are missing, stop and tell me what to install. Do not fake the handshake.
 7. If I choose B, open or guide me to web/index.html, explain the right-side editor, and help me edit or export the page.
 8. If this session cannot access my local desktop apps, local MCP tools, or local browser, say so and stop instead of retrying repeatedly.
@@ -69,7 +69,13 @@ Do not star it automatically for me.
 
 #### A. Pencil MCP Mode
 
-Use this if you already have official Pencil installed and want to work inside `.pen` files or Pencil MCP.
+Use this if you already have official Pencil installed and want to work through a `.pen` file. The recommended flow is:
+
+1. Create a blank `.pen` file in official Pencil.
+2. Let julilaoshi-design read the canvas, edit objects, and adjust layout through Pencil MCP.
+3. Export JPG / PNG or other image formats from official Pencil.
+
+This mode does not require an existing design draft. It can start from a blank `.pen` file.
 
 Before using this mode, install official Pencil from the official source:
 
@@ -90,6 +96,8 @@ Please invoke julilaoshi-design and run a Pencil handshake test. Confirm you can
 #### B. Web Editor Mode
 
 Use this if you want the free, browser-first path.
+
+This mode does not require an app install, official Pencil, or a `.pen` file. It runs directly in the browser, which makes it the easiest path for Windows users or beginners.
 
 Open:
 
