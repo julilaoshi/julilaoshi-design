@@ -18,6 +18,14 @@
 
 English | [简体中文](./README.zh-CN.md)
 
+## What Can This Skill Help You Do?
+
+- Turn a short design request into an editable first-pass page.
+- Read the Pencil canvas, batch layout changes, and review screenshots through MCP.
+- Move, resize, and edit elements in the browser when Pencil is unavailable.
+- Combine agent automation with hands-on refinement instead of producing a dead image.
+- Finish with an editable Pencil workflow or a standalone HTML export.
+
 ## Why This Repository Exists
 
 Many people see my public videos and assume:
@@ -206,14 +214,6 @@ This is deliberately a small public layer. It is not the full internal workflow,
     <img src="./assets/walkthrough-thumbnail.jpg" alt="Watch the julilaoshi-design walkthrough" width="560" />
   </a>
 </p>
-
-## What This Actually Unlocks
-
-- start directing `Pencil` with an agent instead of only editing everything by hand
-- run a real workflow: handshake first, read the canvas, make bounded changes, then review screenshots
-- switch into lock-safe patching once a page has already been hand-tuned
-- package the `Pencil` layer into something easier to reuse and open-source
-- get closer to the “semi-automatic design” feeling from my public videos when paired with `takeaway-skill` and real reference data
 
 ## Start Here
 
