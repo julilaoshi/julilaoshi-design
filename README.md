@@ -18,21 +18,26 @@
 
 English | [简体中文](./README.zh-CN.md)
 
-## julilaoshi-design Web 2.0
+## Why This Repository Exists
 
-julilaoshi-design now has a public Web 2.0 path for people who do not want to install the official Pencil app first.
+Many people see my public videos and assume:
 
-Try the free static editor:
+- one skill
+- one sentence
+- one automatic finished page
 
-- open [`web/index.html`](./web/index.html)
-- drag, resize, rotate, duplicate, delete, align, and edit simple layers
-- hide the editor while reviewing
-- click `Done` to remove the editing UI from the final page
-- export a standalone HTML snapshot
+That is not the honest version.
 
-This is deliberately a small public layer. It is not the full internal workflow, and it does not include private style packs, private prompt chains, or advanced paid features planned for later versions.
+This repository exists to open the reusable part first:
 
-## How To Load And Use
+- the `Pencil` execution discipline
+- the public workflow shell
+- the release boundary
+- the dependency explanation
+
+So people can run a real chain instead of only watching a cool video.
+
+## How to Load and Use
 
 If this is your first time using Codex, Claude Code, or a Pencil-style workflow, start by asking your coding agent to load julilaoshi-design and choose a mode.
 
@@ -180,6 +185,20 @@ In other words:
 - the public `v2.0` Web editor is free and browser-first
 - but it is not a magic package that reproduces my strongest public videos without environment, dependencies, or upstream skills
 
+## julilaoshi-design Web 2.0
+
+julilaoshi-design now has a public Web 2.0 path for people who do not want to install the official Pencil app first.
+
+Try the free static editor:
+
+- open [`web/index.html`](./web/index.html)
+- drag, resize, rotate, duplicate, delete, align, and edit simple layers
+- hide the editor while reviewing
+- click `Done` to remove the editing UI from the final page
+- export a standalone HTML snapshot
+
+This is deliberately a small public layer. It is not the full internal workflow, and it does not include private style packs, private prompt chains, or advanced paid features planned for later versions.
+
 ## Watch The Walkthrough
 
 <p align="center">
@@ -202,25 +221,6 @@ In other words:
 - [Read the Chinese version](./README.zh-CN.md)
 - treat this repo as a public execution layer, not the full internal stack
 - [Open the Web 2.0 editor](./web/index.html)
-
-## Why This Repository Exists
-
-Many people see my public videos and assume:
-
-- one skill
-- one sentence
-- one automatic finished page
-
-That is not the honest version.
-
-This repository exists to open the reusable part first:
-
-- the `Pencil` execution discipline
-- the public workflow shell
-- the release boundary
-- the dependency explanation
-
-So people can run a real chain instead of only watching a cool video.
 
 ## What This Repository Includes
 
